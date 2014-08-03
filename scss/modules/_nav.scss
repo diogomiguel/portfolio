@@ -1,11 +1,84 @@
 /**
- * An example module: Nav
- *
- * @author Diogo Silva
- * @date 23.05.2014
+ * All styles related to markup inside the top nav
  */
 
-/*
- * General styling
- */
+.topnav{
+	height: em(23px);
+	margin-bottom: 5px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.topnav__nav{
+	float:left;
+	height: 100%;
+	ul{
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width:100%;
+	}
+}
+.topnav__nav__item{
+	float:left;
+	list-style: none;
+	margin-right: 5px;
+	height: 100%;
+	margin-bottom: 0;
+	a{
+		color: $white;
+		display: block;
+		height: 100%;
+		padding: 0 em(20px, 13px);
+		line-height: em(23px, 13px);
+		font-family: $questrial;
+		text-transform: uppercase;
+		background-color: rgba($black, 0.3);
+		&:hover, &.topnav__nav__item--active{
+			background-color: rgba($orange, 0.6);
+		}
+	}
+}
+.topnav__useful{
+	width: 100%;
+	background-color: rgba($black, 0.6);
+	height: 100%;
+	margin-left: 348px;
+	ul{
+		position: absolute;
+		right: 20px;
+		text-align: right;
+	}
+}
+.topnav__useful__item{
+	font-size: em(12px);
+	padding-right: em(30px, 12px);
+	display: inline-block;
+	background: url($images-path + "icons-small.png") no-repeat;
+	height: 12px;
+	margin: em(5px, 12px) 0 0;
+	a{
+		color: $white;
+		display: block;
+		top: em(-4px, 12px);
+		position: relative;
+	}
+}
+.topnav__useful__item--email{
+	padding-left: 19px;
+	background-position: 0 -58px;
+}
+.topnav__useful__item--github{
+	padding-left: 17px;
+	background-position: 0 -105px;
+}
+.topnav__useful__item--linkedin{
+	padding-left: 16px;
+	background-position: 0 -91px;
+}
+.topnav__useful__item--twitter{
+	padding-left: 17px;
+	padding-right: 0;
+	background-position: 0 -75px;
 
+}

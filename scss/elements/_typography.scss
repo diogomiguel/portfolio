@@ -1,5 +1,5 @@
 /**
- * Typography is specified in here.
+ * General Typography is specified in here.
  */
 
 
@@ -63,8 +63,8 @@ a{
 	text-decoration: none;
 	outline : none;
 	@include transition-property('all');
-	@include transition-duration('1s');
-	
+	@include transition-duration('0.5s');
+
 	&:visited{
 		color: $orange;
 	}
@@ -93,7 +93,7 @@ p{
 	font-family: $exo2;
 	font-size: em(13px);
 	line-height: em(16px, 13px);
-	margin-bottom: em(16px, 13px);
+	padding-bottom: em(16px, 13px);
 
 	&:last-child, .last-child{
 		margin-bottom: 0;
@@ -121,11 +121,12 @@ ol{
 }
 li{
 	font-size: em(13px);
-	padding-bottom: em(5px, 13px);
+	margin-bottom: em(5px, 13px);
 }
 
 em, ::-webkit-selection, ::-moz-selection, ::selection { 
   background : $yellow; 
   text-shadow : none;
   border-bottom: 2px solid $black;
+  font-style: normal;
 }

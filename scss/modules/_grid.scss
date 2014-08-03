@@ -1,16 +1,23 @@
 /**
  * Grid and it's elements are defined here.
  */
+
+.gridmask{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
 .grid{
 	width: 100%;
 	position: relative;
+	left: 2.5px;
 }
 .grid__item{
 	width: 25%;
 	position: relative;
 	max-width: 305px;
 	float: left;
-	
+	overflow:hidden;
 }
 .grid__item__wrapper{
 	padding:5px 5px 20px;
@@ -56,8 +63,13 @@
 	height: 27px;
 	position: relative;
 	overflow: hidden;
-	background: url($images-path + "logo.jpg") no-repeat center top;
 	margin-bottom: em(14px, 32px);
+
+	img{
+		max-width: 257px;
+		margin: 0 auto;
+		display: block;
+	}
 	span{
 		text-indent: -9999px;
 		display: block;
@@ -144,6 +156,7 @@
 			font-weight: bold;
 			text-align: center;
 			font-size: em(36px, 22px);
+			line-height: em(40px, 36px);
 		}
 	}
 }
@@ -181,8 +194,5 @@
 	p{
 		font-size: em(16px);
 		padding-bottom: em(14px, 16px);
-	}
-	a:hover{
-		color: $orange;
 	}
 }

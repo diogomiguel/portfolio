@@ -15,7 +15,7 @@ button,
 input,
 select,
 textarea {
-	color: $main-color;
+	color: $grey;
 }
 
 body {
@@ -23,21 +23,6 @@ body {
 	line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-	background: $selection-color;
-	text-shadow: none;
-}
-
-::selection {
-	background: $selection-color;
-	text-shadow: none;
-}
 
 /*
  * A better looking default horizontal rule
@@ -47,7 +32,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px solid $hr-color;
+	border-top: 1px solid $grey;
 	margin: 1em 0;
 	padding: 0;
 }

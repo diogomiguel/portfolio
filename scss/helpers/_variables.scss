@@ -1,3 +1,32 @@
 /**
  * Variables to be used throughout the project
  */
+
+// Fonts
+$exo2: "Exo 2", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+$questrial: "Questrial", sans-serif;
+
+$base-font-size: 16px;
+
+
+// Colors
+$grey: #838689;
+$orange: #b38456;
+$firefly: #0d2533;
+$black: #000000;
+$white: #FFFFFF;
+$blue: #3f99ac;
+$green: #56a350;
+$yellow: #FFF67A;
+
+
+// Miscs
+$images-path: "../dist/img/";
+
+
+// Functions
+@function em($target, $context: $base-font-size) {
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0em;
+}

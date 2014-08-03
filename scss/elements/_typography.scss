@@ -1,3 +1,131 @@
 /**
  * Typography is specified in here.
  */
+
+
+//-----------------------------------------------------------------------
+// Typographic Base
+//-----------------------------------------------------------------------
+html{
+	font-family: $exo2;
+	color: $grey;
+}
+body{
+	font-size: 16px;
+}
+
+//-----------------------------------------------------------------------
+// Headings
+//-----------------------------------------------------------------------
+h1{
+	font-family: $montserrat;
+	font-size: em(32px);
+	letter-spacing: em(3px, 32px);
+	text-align: center;
+	color: $grey;
+	font-weight: bold;
+	margin-bottom: em(16px, 32px);
+}
+h2{
+	font-family: $exo2;
+	color: $firefly;
+	text-align: left;
+	font-size: em(22px);
+	line-height: em(26px, 22px);
+	font-weight: medium;
+	margin-bottom: em(8px, 22px);
+}
+h3{
+	font-family: $exo2;
+	color: $firefly;
+	text-align: left;
+	font-size: em(18px);
+	line-height: em(22px, 18px);
+	font-weight: medium;
+	margin-bottom: em(8px, 18px);
+}
+h4{
+	font-family: $exo2;
+	color: $firefly;
+	text-align: left;
+	font-size: em(16px);
+	line-height: em(19px, 16px);
+	font-weight: medium;
+	margin-bottom: em(8px, 18px);
+}
+
+
+//-----------------------------------------------------------------------
+// Links
+//-----------------------------------------------------------------------
+a{
+	color: $orange;
+	text-decoration: none;
+	outline : none;
+	@include transition-property('all');
+	@include transition-duration('1s');
+	
+	&:visited{
+		color: $orange;
+	}
+	&:hover{
+		color: $firefly;
+		text-decoration: underline;
+	}
+	&:link{
+		-webkit-tap-highlight-color : $yellow;
+	}
+	&.active{
+		color: $grey;
+		@include opacity(0.5);
+
+		&:hover{
+			color: $grey;
+			text-decoration: none;
+		}
+	}
+}
+
+//-----------------------------------------------------------------------
+// General Typography
+//-----------------------------------------------------------------------
+p{
+	font-family: $exo2;
+	font-size: em(13px);
+	line-height: em(16px, 13px);
+	margin-bottom: em(16px, 13px);
+
+	&:last-child, .last-child{
+		margin-bottom: 0;
+	}
+}
+big{
+	font-size: 1.18em;
+}
+small{
+	font-size: 0.82em;
+}
+
+
+ul, ol{
+	margin: 0 0 1.5em 0;
+	padding-left: 1.5em;
+	list-style-type: circle;
+
+	ul, ol{
+		margin-bottom: 0.75em;
+	}
+}
+ol{
+	list-style-type: decimal;
+}
+li{
+	font-size: em(13px);
+	padding-bottom: em(5px, 13px);
+}
+
+em, ::-webkit-selection, ::-moz-selection, ::selection { 
+  background : $yellow; 
+  text-shadow : none;
+  border-bottom: 2px solid $black;
+}

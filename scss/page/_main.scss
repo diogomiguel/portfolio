@@ -1,0 +1,42 @@
+/**
+ * All styles related to markup inside the main element
+ */
+
+/* ==========================================================================
+   Custom Base styles: opinionated defaults
+   ========================================================================== */
+ body{
+ 	margin:0;
+ 	padding:0;
+ }
+ section{
+ 	display:block;
+ 	width:100%;
+ 	position: relative;
+ }
+ h1, h2, h3{
+ 	margin:0;
+ }
+
+input:required:invalid {
+	background-color: $white-color; 
+	color: $red-color;
+	@include box-shadow(none);
+}
+input:required:valid {
+	background-color: $white-color; 
+	color: $main-color; 
+	@include box-shadow(none);
+}
+.browsehappy{
+	width:100%;
+	z-index:100000;
+	top:0;
+	text-align:center;
+	margin:0;
+	position:fixed;
+	font-size:1em;
+}
+* html .browsehappy{
+	position:absolute;
+}

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>T Drum</title>
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+</head>
+<body>
+	<!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> and <strong>unsupported</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- LOADING SCREEN -->
+	<div class="loading" id="js-loading-section">
+		<img src="dist/img/preloader-animation.gif" alt="Loading" title="Loading" class="loading-img" />
+		<p class="loading-text">Loading</p>
+	</div>
+
+	<script type="text/javascript">
+		document.getElementById('js-loading-section').style.display = 'block';
+		var htmlElement = document.getElementsByTagName("html")[0];
+
+		htmlElement.style.overflow = 'hidden';
+	</script>
+
+	<!-- MAIN NAV -->
+	<div class="mainnav" id="js-mainnav">
+		<img src="dist/img/small-logo.gif" alt="T Drum music" width="164" class="mainnav__logo" />
+		<img src="dist/img/mobile/small-logo.gif" alt="T Drum music" width="269" class="mainnav__logo__mobile" />
+		
+		
+		<nav>
+			<ul class="mainnav__nav" id="js-mainnav-nav">
+				<li class="mainnav__nav__homepage">
+					<a href="#js-homepage-section">Our showreel</a>
+				</li>
+				<li class="mainnav__nav__whatwedo">
+					<a href="#js-whatwedo-section">What we do</a>
+				</li>
+				<li class="mainnav__nav__ourwork">
+					<a href="#js-ourwork-section">Our work</a>
+				</li>
+				<li class="mainnav__nav__whoweare">
+					<a href="#js-whoweare-section">Who we are</a>
+				</li>			
+				<li class="mainnav__nav__client">
+					<a href="#js-client-section" id="js-mainnav-nav-clientarea">Client area</a>
+				</li>
+			</ul>
+			<ul class="mainnav__socialmedia">
+				<li class="mainnav__socialmedia__facebook">
+					<a href="#">
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li class="mainnav__socialmedia__twitter">
+					<a href="#">
+						<span>Twitter</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<button class="mainnav__mobile__btn" id="js-mainnav-mobile-btn">
+			<img src="dist/img/mobile/menu-icon.gif" alt="Open Nav" width="100%" />
+		</button>
+	</div>
+	<!-- END MAIN NAV -->
+
+	
+
+	<!-- HOMEPAGE -->
+	<section class="homepage" id="js-homepage-section" data-0="visibility:!visible;">
+		<header>
+			<h1 id="js-homepage__logo">
+				<img src="dist/img/logo.png" alt="T Drum Music Logo" width="778" height="427" />
+				<span>T Drum Music</span>
+			</h1>
+		</header>
+
+		<div class="homepage__video" id="js-homepage-video-container" data>
+			<button class="homepage__video__play  homepage__video__button" id="js-video-play">
+				<span>Resume/Pause</span>
+			</button>
+			<button class="homepage__video__audio  homepage__video__button" id="js-video-audio">
+				<span>Mute/Unmute</span>
+			</button>
+			<video loop poster="dist/img/blank.png" class="homepage__video__player" id="js-video">
+				<source src="dist/videos/showreel.mp4" type="video/mp4">
+				<source src="dist/videos/showreel.webmhd.webm" type="video/webm">
+			</video>
+		</div>
+
+		
+	</section>
+
+	<img class="scrollmore" id="js-scrollmore" src="dist/img/scroll-label.png" alt="Scroll To Explore" width="157" height="45" data-anchor-target="#js-whatwedo-section" data-0="display:!block;" data-top="display:!block;" data-bottom-bottom="display:!none;" />
+	<!-- END HOMEPAGE -->
+	
+	
+
+	<!-- WHAT WE DO -->
+	<section class="whatwedo" id="js-whatwedo-section" data--400-top-bottom="visibility:!hidden;">
+		<div class="whatwedo__bg" id="js-whatwedo-bg"></div>
+		<div class="whatwedo__container" id="js-whatwedo-container" data-anchor-target="#js-whatwedo-bg">
+			<header>
+				<h2>What We Do</h2>
+			</header>
+
+			<div class="whatwedo__content">
+				<p class="whatwedo__content__main">
+					T Drum Music is an independent, full service music consultancy run by three passionate music supervisors.
+				Our specialities include:
+
+				</p>
+				<div class="whatwedo__table">
+					<div class="whatwedo__column">
+						<div class="whatwedo__copy">
+							<h3>
+								Search
+							</h3>
+							<p>We call it &lsquo;searches with personality&rsquo;, combining our passions to bring a unique perspective to each job. Original, creative, imaginative, innovative, resourceful, we pride ourselves on going to great lengths to find the right fit for your film.</p>
+						</div>
+					</div>
+					
+					<div class="whatwedo__column">
+						<div class="whatwedo__copy">
+							<h3>
+								Composition
+							</h3>
+							<p>We take a non-exclusive approach, &#3;giving us the freedom to work with a broad range of professional composers, artists, choirs, orchestras, poets and everything in between to accommodate any bespoke brief.</p>
+						</div>
+					</div>
+					
+					<div class="whatwedo__column">
+						<div class="whatwedo__copy">
+							<h3>
+								Licensing
+							</h3>
+							<p>Coming from an in-house agency &#3;background we combine a breadth of licensing experience, including (but not limited to), advertising, film, television &#3;and videogames.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<img src="dist/img/mobile/ww-rock1.png" alt="Graphic purposes only" width="360" class="rock__graphic__1 rock__graphic--mobile" />
+			<img src="dist/img/mobile/ww-rock2.png" alt="Graphic purposes only" width="360" class="rock__graphic__2 rock__graphic--mobile" />
+		</div>
+		<!-- ROCKS -->
+		<div class="whatwedo__meteor" id="js-whatwedo-meteor" data-anchor-target="#js-whatwedo-section">
+			<img src="dist/img/rocks/rock-4.png" alt="Graphic purposes only" width="334" height="261" class="whatwedo__meteor__rock__1 whatwedo__meteor__rock" id="js-whatwedo-meteor-1" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-7.png" alt="Graphic purposes only" width="350" class="whatwedo__meteor__rock__2 whatwedo__meteor__rock" id="js-whatwedo-meteor-2" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-2.png" alt="Graphic purposes only" width="350" height="298" class="whatwedo__meteor__rock__3 whatwedo__meteor__rock" id="js-whatwedo-meteor-3" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-1.png" alt="Graphic purposes only" width="248" class="whatwedo__meteor__rock__4 whatwedo__meteor__rock" id="js-whatwedo-meteor-4" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-8.png" alt="Graphic purposes only" width="100" class="whatwedo__meteor__rock__5 whatwedo__meteor__rock" id="js-whatwedo-meteor-5" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-6.png" alt="Graphic purposes only" width="240" class="whatwedo__meteor__rock__6 whatwedo__meteor__rock" id="js-whatwedo-meteor-6" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-3.png" alt="Graphic purposes only" width="397" height="203" class="whatwedo__meteor__rock__7 whatwedo__meteor__rock" id="js-whatwedo-meteor-7" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-8.png" alt="Graphic purposes only" width="169" height="157" class="whatwedo__meteor__rock__8 whatwedo__meteor__rock" id="js-whatwedo-meteor-8" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-9.png" alt="Graphic purposes only" width="105" height="136" class="whatwedo__meteor__rock__9 whatwedo__meteor__rock" id="js-whatwedo-meteor-9" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-10.png" alt="Graphic purposes only" width="186" class="whatwedo__meteor__rock__10 whatwedo__meteor__rock" id="js-whatwedo-meteor-10" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-11.png" alt="Graphic purposes only" width="140" height="117" class="whatwedo__meteor__rock__11 whatwedo__meteor__rock" id="js-whatwedo-meteor-11" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-12.png" alt="Graphic purposes only" width="134" class="whatwedo__meteor__rock__12 whatwedo__meteor__rock" id="js-whatwedo-meteor-12" data-anchor-target="#js-whatwedo-section" />
+			<img src="dist/img/rocks/rock-5.png" alt="Graphic purposes only" width="100" class="whatwedo__meteor__rock__13 whatwedo__meteor__rock" id="js-whatwedo-meteor-13" data-anchor-target="#js-whatwedo-section" />
+			 
+		</div>
+	<!-- END ROCKS -->
+	</section>
+	<!-- END WHAT WE DO -->
+
+
+	
+
+
+	<!-- OUR WORK -->
+	<section class="ourwork" id="js-ourwork-section" data-0="visibility:!hidden;" data-bottom-top="visibility:!visible" data--400-top-bottom="visibility:!hidden;">
+		<header>
+			<h2>Our Work</h2>
+		</header>
+		
+		
+		
+		<div class="ourwork__portfolio" id="js-ourwork-portfolio">
+			<nav class="ourwork__filters">
+				<ul id="js-ourwork-filters">
+					<li><a href="#" class="active" data-filter="*">All</a></li>
+					<li><a href="#" data-filter=".advert">Adverts</a></li>	
+					<li><a href="#" data-filter=".film">Films</a></li>
+					<li><a href="#" data-filter=".other">Other</a></li>
+					<li><a href="#" data-filter=".showreel">Showreel</a></li>
+				</ul>
+			</nav>	
+			
+			<form class="ourwork__search" id="js-ourwork-searchform">
+				<label class="ourwork__search__btn" for="js__ourwork__search__input" id="js__ourwork__search__btn">Search</label>
+				<input type="text" class="ourwork__search__input ourwork__search__input--hidden" id="js__ourwork__search__input" name="search" />
+			</form>
+
+			
+			<div class="clearfix"></div>
+
+			<div class="ourwork__grid" id="js-ourwork-grid">
+				<div class="ourwork__grid__item ourwork__grid__item--slandscape showreel" id="js-ourwork-grid-item-1">
+					<figure>
+						<div class="ourwork__grid__item__image">
+							<img src="dist/img/blank.png" data-original="dist/img/our-work/dummy-slandscape.jpg" alt="Dummy" width="272" />
+							<img src="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" class="ourwork__grid__item__image__mobile" />
+
+						</div>
+						<figcaption class="ourwork__grid__item__rollover">
+							<div>
+								<h3>Showrell</h3>
+
+
+								<a href="dist/videos/showreel.mp4" class="ourwork__grid__item__play">Play</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="ourwork__grid__item ourwork__grid__item--slandscape film advert" id="js-ourwork-grid-item-2">
+					<figure>
+						<div class="ourwork__grid__item__image">
+							<img src="dist/img/blank.png" data-original="dist/img/our-work/dummy-slandscape.jpg" alt="Dummy" width="272" />
+							<img src="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" class="ourwork__grid__item__image__mobile" />
+						</div>
+						<figcaption class="ourwork__grid__item__rollover">
+							<div>
+								<h3>Dummy 2</h3>
+
+								<p>‘Barry the Biscuit Boy<br />
+								Agency: Wieden &amp; Kennedy</p>
+
+								<a href="dist/videos/showreel.mp4" class="ourwork__grid__item__play">Play</a>
+							</div>
+						</figcaption>
+					</figure>
+					
+				</div>
+				<div class="ourwork__grid__item ourwork__grid__item--blandscape advert" id="js-ourwork-grid-item-3">
+					<figure>
+						<div class="ourwork__grid__item__image">
+							<img src="dist/img/blank.png" data-original="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" />
+							<img src="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" class="ourwork__grid__item__image__mobile" />
+						</div>
+						<figcaption class="ourwork__grid__item__rollover">
+							<div>
+								<h3>Cravendale</h3>
+
+								<p>‘Barry the Biscuit Boy<br />
+								Agency: Wieden &amp; Kennedy</p>
+
+								<a href="dist/videos/showreel.mp4" class="ourwork__grid__item__play">Play</a>
+							</div>
+						</figcaption>
+					</figure>
+					
+				</div>
+				<div class="ourwork__grid__item ourwork__grid__item--blandscape other" id="js-ourwork-grid-item-4">
+					<figure>
+						<div class="ourwork__grid__item__image">
+							<img src="dist/img/blank.png" data-original="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" />
+							<img src="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" class="ourwork__grid__item__image__mobile" />
+						</div>
+						<figcaption class="ourwork__grid__item__rollover">
+							<div>
+								<h3>Cravendale</h3>
+
+								<p>‘Barry the Biscuit Boy<br />
+								Agency: Wieden &amp; Kennedy</p>
+
+								<a href="dist/videos/showreel.mp4" class="ourwork__grid__item__play">Play</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="ourwork__grid__item ourwork__grid__item--portrait" id="js-ourwork-grid-item-4">
+				</div>
+				<div class="ourwork__grid__item ourwork__grid__item--portrait advert other" id="js-ourwork-grid-item-5">
+					<figure>
+						<div class="ourwork__grid__item__image">
+							<img src="dist/img/blank.png" data-original="dist/img/our-work/dummy-portrait.jpg" alt="Dummy" width="272" />
+							<img src="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" class="ourwork__grid__item__image__mobile" />
+						</div>
+						<figcaption class="ourwork__grid__item__rollover">
+							<div>
+								<h3>Portrait 1</h3>
+
+								<p>‘Barry the Biscuit Boy<br />
+								Agency: Wieden &amp; Kennedy</p>
+
+								<a href="dist/videos/showreel.mp4" class="ourwork__grid__item__play">Play</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="ourwork__grid__item ourwork__grid__item--portrait advert other" id="js-ourwork-grid-item-6">
+					<figure>
+						<div class="ourwork__grid__item__image">
+							<img src="dist/img/blank.png" data-original="dist/img/our-work/dummy-portrait.jpg" alt="Dummy" width="272" />
+							<img src="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" class="ourwork__grid__item__image__mobile" />
+						</div>
+						<figcaption class="ourwork__grid__item__rollover">
+							<div>
+								<h3>Portrait 1</h3>
+
+								<p>‘Barry the Biscuit Boy<br />
+								Agency: Wieden &amp; Kennedy</p>
+
+								<a href="dist/videos/showreel.mp4" class="ourwork__grid__item__play">Play</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="ourwork__grid__item ourwork__grid__item--slandscape film" id="js-ourwork-grid-item-7">
+					<figure>
+						<div class="ourwork__grid__item__image">
+							<img src="dist/img/blank.png" data-original="dist/img/our-work/dummy-slandscape.jpg" alt="Dummy" width="272" />
+							<img src="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" class="ourwork__grid__item__image__mobile" />
+						</div>
+						<figcaption class="ourwork__grid__item__rollover">
+							<div>
+								<h3>Dummy 3</h3>
+
+								<p>‘Barry the Biscuit Boy<br />
+								Agency: Wieden &amp; Kennedy</p>
+
+								<a href="dist/videos/showreel.mp4" class="ourwork__grid__item__play">Play</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="ourwork__grid__item ourwork__grid__item--blandscape advert" id="js-ourwork-grid-item-8">
+					<figure>
+						<div class="ourwork__grid__item__image">
+							<img src="dist/img/blank.png" data-original="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" />
+							<img src="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" class="ourwork__grid__item__image__mobile" />
+						</div>
+						<figcaption class="ourwork__grid__item__rollover">
+							<div>
+								<h3>Cravendale</h3>
+
+								<p>‘Barry the Biscuit Boy<br />
+								Agency: Wieden &amp; Kennedy</p>
+
+								<a href="dist/videos/showreel.mp4" class="ourwork__grid__item__play">Play</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				
+				<div class="ourwork__grid__item ourwork__grid__item--portrait advert other" id="js-ourwork-grid-item-9">
+					<figure>
+						<div class="ourwork__grid__item__image">
+							<img src="dist/img/blank.png" data-original="dist/img/our-work/dummy-portrait.jpg" alt="Dummy" width="272" />
+							<img src="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" class="ourwork__grid__item__image__mobile" />
+						</div>
+						<figcaption class="ourwork__grid__item__rollover">
+							<div>
+								<h3>Portrait 1</h3>
+
+								<p>‘Barry the Biscuit Boy<br />
+								Agency: Wieden &amp; Kennedy</p>
+
+								<a href="dist/videos/showreel.mp4" class="ourwork__grid__item__play">Play</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="ourwork__grid__item ourwork__grid__item--slandscape film" id="js-ourwork-grid-item-10">
+					<figure>
+						<div class="ourwork__grid__item__image">
+							<img src="dist/img/blank.png" data-original="dist/img/our-work/dummy-slandscape.jpg" alt="Dummy" width="272" />
+							<img src="dist/img/our-work/dummy-blandscape.jpg" alt="Dummy" width="556" class="ourwork__grid__item__image__mobile" />
+						</div>
+						<figcaption class="ourwork__grid__item__rollover">
+							<div>
+								<h3>Dummy 2</h3>
+
+								<p>‘Barry the Biscuit Boy<br />
+								Agency: Wieden &amp; Kennedy</p>
+
+								<a href="dist/videos/showreel.mp4" class="ourwork__grid__item__play">Play</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div id="js-ourwork-searchmsg" class="ourwork_searchmsg">
+			<p>There are no results for your search criteria</p>
+		</div>
+
+		<button class="ourwork__loadmore" id="js-ourwork-loadmore" data-pages="3">
+			<span>Load More +</span>
+		</button>
+		<!--
+		<div class="ourwork__meteors" id="js-ourwork-meteors" data-anchor-target="#js-ourwork-section">
+
+			<img src="dist/img/rocks/rock-work-1.png" alt="Graphic purposes only" width="184" height="397" class="ourwork__meteor__rock__1 ourwork__meteor__rock" id="js-ourwork-meteor-1" data-anchor-target="#js-ourwork-section" data-0="transform:translate(0,560px);"  />
+
+			<img src="dist/img/rocks/rock-work-2.png" alt="Graphic purposes only" width="386" height="344" class="ourwork__meteor__rock__2 ourwork__meteor__rock" id="js-ourwork-meteor-2" data-anchor-target="#js-ourwork-section" data-0="transform:translate(0,510px);" />
+
+			<img src="dist/img/rocks/rock-work-3.png" alt="Graphic purposes only" width="354" height="384" class="ourwork__meteor__rock__3 ourwork__meteor__rock" id="js-ourwork-meteor-3" data-anchor-target="#js-ourwork-section" data-0="transform:translate(0,410px);" />
+
+		</div>
+
+		-->
+	</section>
+	<!-- END OUR WORK -->
+
+
+	<!-- WHO WE ARE -->
+	<section class="whoweare" id="js-whoweare-section" data-0="visibility:!hidden;" data-bottom-top="visibility:!visible" data--400-top-bottom="visibility:!hidden;">
+		<div id="js-whoweare-container" class="whoweare__container" data-anchor-target="#js-whoweare-section">
+			<header>
+				<h2>Who We Are</h2>
+			</header>
+
+			<div class="whoweare__bio">
+				<div class="whoweare__bio__column">
+					<div class="whoweare__bio__person">
+						<h3>
+						Person 1
+						</h3>
+
+						<p>
+							Person 1 set up T Drum Music in October 2011 following 8 years experience in music supervision. Starting out as Creative Director of Huge Music, WCRS advertising agencies's in house music consultancy, Person 1 supervised a number of award winning advertising campaigns, feature films and television series.
+						</p>
+
+						<p>
+							Person 1 then joined Chrysalis Music as Creative Director of synchronisation and subsequently joined Spirit Music Group as Senior Director of Creative Services. These roles included creative searches, fee and deal term negotiation, issuing contracts and A&amp;R scouting for the UK market.
+						</p>
+
+						<address>
+							<p class="whoweare__bio__person__email">
+								<span><a href="mailto:xx@tmmusic.co.uk">xx@tmmusic.co.uk</a></span>	
+							</p>
+							<!--
+							<p class="whoweare__bio__person__phone">
+							</p>
+							-->
+						</address>
+					</div>
+				</div>
+
+				<div class="whoweare__bio__column">
+					<div class="whoweare__bio__person">
+						<h3>
+						Person 2
+						</h3>
+
+						<p>
+							Working the last 10 years in music supervision, including six years at Soundtree Music, Adam has worked on some of the biggest campaigns of the last decade including; John Lewis ‘Clues’, Guinness ’Noitulove’ (Creative Circle Awards 2006, Best Use Of Music (Silver)) and 3 Mobile ’Tuperzik’ (D&amp;AD Awards 2006, Best Use Of Music). He set up T Drum Music in 2011 with Person 1. 
+						</p>
+
+						<address>
+							<p class="whoweare__bio__person__email">
+								<span><a href="mailto:xx@tmmusic.co.uk">xx@tmmusic.co.uk</a></span>	
+							</p>
+							<!--
+							<p class="whoweare__bio__person__phone">
+							</p>
+							-->
+						</address>
+					</div>
+
+					<div class="whoweare__bio__person">
+						<h3>
+						Person 3
+						</h3>
+
+						<p>
+							Person 3 has worked in music synchronisation since 2004. He began his career with Soundtree Music where he spent 5 years and in that time oversaw numerous high profile projects for clients including Sony Walkman, Smirnoff and Person 3 amongst others. In 2009 he joined A&amp;GSync as their UK sync manager and was responsible for the award winning Ikea 'Playing With My Friends' commercial, Samsung 'The Chase' and Axe 'The Chain'. Person 2 joined T Drum in July 2013.
+						</p>
+
+						<address>
+							<p class="whoweare__bio__person__email">
+								<span><a href="mailto:xx@tmmusic.co.uk">xx@tmmusic.co.uk</a></span>	
+							</p>
+							<!--
+							<p class="whoweare__bio__person__phone">
+								
+							</p>
+							-->
+						</address>
+					</div>
+				</div>
+			</div>
+			
+
+			<img src="dist/img/mobile/wwa-rock1.png" alt="Graphic purposes only" width="278" class="rock__graphic__3 rock__graphic--mobile" />
+			<img src="dist/img/mobile/wwa-rock2.png" alt="Graphic purposes only" width="150" class="rock__graphic__4 rock__graphic--mobile" />
+			<img src="dist/img/mobile/wwa-rock3.png" alt="Graphic purposes only" width="189" class="rock__graphic__5 rock__graphic--mobile" />
+		</div>
+		<img src="dist/img/rocks/rock-whatwedo.png" alt="Graphic purposes only" width="561" height="390" class="whoweare__meteor__rock__1 whoweare__meteor__rock" id="js-whoweare-meteor-1" data-anchor-target="#js-whoweare-section" />		
+	</section>	
+	<!-- END WHO WE ARE -->
+
+	<!-- CLIENTS AREA -->
+	<div class="client-transitions-container" id="js-client-transitions-container" data-0="visibility:!hidden;" data-top="visibility:!visible;display:!block;" data-anchor-target="#js-whoweare-section">
+		<div class="client-transition-slide1" data-bottom-top="display:!block;opacity:0;width: 100%; height: 100%; top: 0%; left: 0%;" data-top-bottom="display:!block;opacity: 1;width: 100%; height: 100%; top: 0%; left: 0%;" data-anchor-target="#js-whoweare-section" data--1200-top-bottom="opacity: 0; width: 160%; height: 160%; top: -30%; left: -30%;display:!none;">
+			<img src="dist/img/clients-bg.jpg" alt="Graphic purposes only" width="102.5%" class="client-transition-slide1__image-left" data-top="top:0px;" data-top-bottom="top:0px;width:100%;"  data--1200-top-bottom="width:95%;" data-anchor-target="#js-whoweare-section" />
+
+			<img src="dist/img/clients-bg-rocks.png" alt="Graphic purposes only" width="100%" class="client-transition-slide1__image-right" data-top="top:0px;" data-top-bottom="top:0px" data--1200-top-bottom="top:-125px" data-anchor-target="#js-whoweare-section" id="js-client-transition-slide1__image-right" />
+		</div>
+
+	
+	</div>
+	
+	<div data-anchor-target="#js-client-transitions-container" data-0="z-index:!3;display:!none;position:!fixed;width:!100%;height:!100%;top:!0;" data-300-top-center="opacity:0;position:!fixed;width:!100%;height:!100%;top:!0;z-index:!3;display:!block;" data-bottom-bottom="opacity:1;z-index:!3;width:!100%;height:!100%;top:!0;z-index:!3;display:!block;" class="client__wrapper" id="js-client-wrapper">
+		<section class="client" id="js-client-section">
+			<form class="client__form" accept-charset="UTF-8" action="https://clients.example.com/session" method="post" id="js-client-form">
+				<legend>Client Login</legend>
+				<fieldset>
+					<ol>
+						<li class="client__form__email__row">
+					        <label for="client__form__email">Email</label>
+					        <input required id="client__form__email" name="login[email]" size="30" type="email" />
+					    </li>
+					    <li class="client__form__password__row">
+					        <label for="client__form__password">Password</label>
+					        <input required id="client__form__password" name="login[password]" size="30" type="password" />
+					    </li>
+				    </ol>
+				</fieldset>
+			    <button type="submit" class="client__form__button">Log in</button>
+				<a href="https://ws.onehub.com/a/[YOUR_ACCOUNT_URL]/forgot_password">Forgot your password?</a>
+			</form>
+		</section>
+
+		<footer class="footer">
+			<small>&copy; T Drum Music 2011 | All Rights Reserved | Registered in England: 7754860</small>
+		</footer>
+	</div>
+	<!-- END CLIENTS AREA -->
+
+	<script data-main="js/config" src="components/requirejs/require.js"></script>
+</body>
+</html>

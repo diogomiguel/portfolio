@@ -16,19 +16,19 @@
     
     <!-- START TOP NAVIGATION -->
     <div class="topnav">
-    	<nav class="topnav__nav">
+    	<nav class="topnav__nav" id="js-topnav">
     		<ul>
     			<li class="topnav__nav__item">
-    				<a href="#all" class="topnav__nav__item--active">All</a>
+    				<a href="#all" data-filter="*" class="topnav__nav__item--active">All</a>
     			</li>
     			<li class="topnav__nav__item">
-    				<a href="#projects">Projects</a>
+    				<a data-filter=".project" href="#projects">Projects</a>
     			</li>
     			<li class="topnav__nav__item">
-    				<a href="#about">About</a>
+    				<a data-filter=".about" href="#about">About</a>
     			</li>
     			<li class="topnav__nav__item">
-    				<a href="#blog">Blog</a>
+    				<a data-filter=".blog" href="#blog">Blog</a>
     			</li>
     		</ul>
     	</nav>
@@ -76,10 +76,15 @@
         	<!-- END GRID MAIN -->
 
         	<!-- START GRID RUT -->
-        	<article class="grid__item">
+        	<article class="grid__item project">
         		<section class="grid__item__wrapper grid__item__wrapper--project">
         			<figure>
         				<img src="dist/img/rut/thumb.jpg" alt="Really Useful Theatres" width="100%" id="js__grid__item__wrapper__figure" />
+                        <div class="js__grid__item__wrapper__rollover">
+                            <a href="#">
+                                Read More
+                            </a>
+                        </div>
         			</figure>
         			<header>
         				<h2>
@@ -129,7 +134,7 @@
         	<!-- END GRID RUT -->
 
         	<!-- START GRID ABOUT ME -->
-        	<article class="grid__item">
+        	<article class="grid__item about">
         		<section class="grid__item__wrapper grid__item__wrapper--about">
         			<header>
         				<h2>
@@ -138,16 +143,30 @@
         					</a>
         				</h2>
         			</header>
+                     <div class="js__grid__item__wrapper__rollover">
+                        <a href="#">
+                            Read More
+                        </a>
+                    </div>
         		</section>
         	</article>
         	<!-- END GRID ABOUT ME -->
 
         	<!-- START GRID TIN DRUM -->
-        	<article class="grid__item">
+        	<article class="grid__item project">
         		<section class="grid__item__wrapper grid__item__wrapper--project">
-        			<figure>
-        				<img src="dist/img/tindrum/thumb.jpg" alt="Tin Drum" width="100%" id="js__grid__item__wrapper__figure" />
-        			</figure>
+                    
+                    <figure>
+                        <img src="dist/img/tindrum/thumb.jpg" alt="Tin Drum" width="100%" id="js__grid__item__wrapper__figure" />
+
+                        <div class="js__grid__item__wrapper__rollover">
+                            <a href="#">
+                                Read More
+                            </a>
+                        </div>
+                    </figure>
+                    
+        			
         			<header>
         				<h2>
         					<a href="#">
@@ -197,10 +216,15 @@
 
 
         	<!-- START GRID FREESTYLE.ch -->
-        	<article class="grid__item">
+        	<article class="grid__item project">
         		<section class="grid__item__wrapper grid__item__wrapper--project">
         			<figure>
         				<img src="dist/img/fsi/thumb.jpg" alt="FreeStyle InsuLinx CH" width="100%" id="js__grid__item__wrapper__figure" />
+                        <div class="js__grid__item__wrapper__rollover">
+                            <a href="#">
+                                Read More
+                            </a>
+                        </div>
         			</figure>
         			<header>
         				<h2>
@@ -250,10 +274,16 @@
 
 
         	<!-- START GRID PMB -->
-        	<article class="grid__item">
+        	<article class="grid__item project">
         		<section class="grid__item__wrapper grid__item__wrapper--project">
         			<figure>
         				<img src="dist/img/pm/thumb.jpg" alt="FreeStyle InsuLinx CH" width="100%" id="js__grid__item__wrapper__figure" />
+
+                        <div class="js__grid__item__wrapper__rollover">
+                            <a href="#">
+                                Read More
+                            </a>
+                        </div>
         			</figure>
         			<header>
         				<h2>
@@ -302,7 +332,7 @@
         	<!-- END GRID PMB -->
 
         	<!-- START BMI CALCULATOR -->
-        	<article class="grid__item">
+        	<article class="grid__item blog">
         		<section class="grid__item__wrapper grid__item__wrapper--plugin">
         			
         			<header>
@@ -352,11 +382,17 @@
         	<!-- END GRID BMI CALCULATOR -->
 
         	<!-- START GRID WOUNDCARETODAY -->
-        	<article class="grid__item">
+        	<article class="grid__item project">
         		<section class="grid__item__wrapper grid__item__wrapper--project">
         			
         			<figure>
         				<img src="dist/img/wct/thumb.jpg" alt="Wound Care Today" width="100%" id="js__grid__item__wrapper__figure" />
+
+                        <div class="js__grid__item__wrapper__rollover">
+                            <a href="#">
+                                Read More
+                            </a>
+                        </div>
         			</figure>
         			<header>
         				<h2>
@@ -405,7 +441,7 @@
         	<!-- END GRID WOUNDCARETODAY -->
 
         	<!-- START GRID CONTACT -->
-        	<article class="grid__item">
+        	<article class="grid__item about">
         		<section class="grid__item__wrapper grid__item__wrapper--about">
         			<header>
         				<h2>
@@ -414,12 +450,17 @@
         					</a>
         				</h2>
         			</header>
+                    <div class="js__grid__item__wrapper__rollover">
+                        <a href="#">
+                            Read More
+                        </a>
+                    </div>
         		</section>
         	</article>
         	<!-- END GRID CONTACT -->
 
         	<!-- START CONFERENCE 2 -->
-        	<article class="grid__item">
+        	<article class="grid__item blog">
         		<section class="grid__item__wrapper grid__item__wrapper--blog">
         			
         			<header>
@@ -457,11 +498,16 @@
         	<!-- END GRID CONFERENCE 2 -->
 
         	<!-- START GRID AGP -->
-        	<article class="grid__item">
+        	<article class="grid__item project">
         		<section class="grid__item__wrapper grid__item__wrapper--project">
         			
         			<figure>
         				<img src="dist/img/agp/thumb.jpg" alt="Wound Care Today" width="100%" id="js__grid__item__wrapper__figure" />
+                        <div class="js__grid__item__wrapper__rollover">
+                            <a href="#">
+                                Read More
+                            </a>
+                        </div>
         			</figure>
         			<header>
         				<h2>
@@ -514,11 +560,16 @@
 
 
         	<!-- START GRID HOSIERY SELECTOR -->
-        	<article class="grid__item">
+        	<article class="grid__item project">
         		<section class="grid__item__wrapper grid__item__wrapper--project">
         			
         			<figure>
         				<img src="dist/img/activa/thumb.jpg" alt="Hosiery Selector" width="100%" id="js__grid__item__wrapper__figure" />
+                        <div class="js__grid__item__wrapper__rollover">
+                            <a href="#">
+                                Read More
+                            </a>
+                        </div>
         			</figure>
         			<header>
         				<h2>
@@ -567,7 +618,7 @@
         	<!-- END GRID HOSIERY SELECTOR -->
 
         	<!-- START GA TRACKER -->
-        	<article class="grid__item">
+        	<article class="grid__item blog">
         		<section class="grid__item__wrapper grid__item__wrapper--plugin">
         			
         			<header>
@@ -617,11 +668,16 @@
         	<!-- END GRID GA TRACKER -->
 
         	<!-- START GRID MFB -->
-        	<article class="grid__item">
+        	<article class="grid__item project">
         		<section class="grid__item__wrapper grid__item__wrapper--project">
         			
         			<figure>
         				<img src="dist/img/mfb/thumb.jpg" alt="MFB" width="100%" id="js__grid__item__wrapper__figure" />
+                        <div class="js__grid__item__wrapper__rollover">
+                            <a href="#">
+                                Read More
+                            </a>
+                        </div>
         			</figure>
         			<header>
         				<h2>
@@ -670,11 +726,16 @@
         	<!-- END GRID MFB -->
 
             <!-- START GRID ECOCLOCK -->
-            <article class="grid__item">
+            <article class="grid__item project">
                 <section class="grid__item__wrapper grid__item__wrapper--project">
                     
                     <figure>
                         <img src="dist/img/ecoclock/thumb.jpg" alt="Ecoclock" width="100%" id="js__grid__item__wrapper__figure" />
+                        <div class="js__grid__item__wrapper__rollover">
+                            <a href="#">
+                                Read More
+                            </a>
+                        </div>
                     </figure>
                     <header>
                         <h2>
@@ -723,7 +784,7 @@
             <!-- END GRID ECOCLOCK -->
 
         	<!-- START GRID SKILLS -->
-        	<article class="grid__item">
+        	<article class="grid__item about">
         		<section class="grid__item__wrapper grid__item__wrapper--about">
         			<header>
         				<h2>
@@ -732,12 +793,17 @@
         					</a>
         				</h2>
         			</header>
+                    <div class="js__grid__item__wrapper__rollover">
+                        <a href="#">
+                            Read More
+                        </a>
+                    </div>
         		</section>
         	</article>
         	<!-- END GRID SKILLS -->
 
         	<!-- START CONFERENCE 1 -->
-        	<article class="grid__item">
+        	<article class="grid__item blog">
         		<section class="grid__item__wrapper grid__item__wrapper--blog">
         			
         			<header>

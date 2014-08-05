@@ -7,15 +7,24 @@
 
 require([
 	// Require the modules
-	//'modules/video',
-	'modules/grid'
-], function ($grid) {
+	'modules/grid',
+	'modules/mediaqueries'
+], function ($grid, $mediaqueries) {
 	'use strict';
 
-
-	// Set JWPlayer key
-	//window.jwplayer.key = "fu2u0kgoWvXIFOm4Iiq7xsU3LJRLkDIfHE8ZKQ==";
-
 	$grid.init();
+
+	jQuery.holdReady(true);
+
+	
+
+	var $window = $(window);
+
+	$window.load(function() {
+		jQuery.holdReady(false);
+	});
+
+	$mediaqueries.init();
+
 	
 });

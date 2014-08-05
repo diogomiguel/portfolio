@@ -11,7 +11,7 @@ require.config({
 		'isotope'	: '../components/isotope/jquery.isotope',
 		'imagesLoaded' :  '../components/imagesloaded/imagesloaded.pkgd',
 		'lazyload'	: '../components/jquery.lazyload/jquery.lazyload.min',
-		'simpleStateManager'	: '../components/SimpleStateManager/src/ssm'
+		'simpleStateManager' : '../components/SimpleStateManager/src/ssm'
 	},
 
 	shim: {

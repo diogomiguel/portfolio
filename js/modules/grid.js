@@ -52,10 +52,7 @@ define(['jquery', 'isotope', 'imagesLoaded'], function ($) {
 					that.setMasonry();
 				}).smartresize();
 
-				// Now allow CSS transitions
-				setTimeout(function(){
-					$("#js-grid").children(".grid__item").addClass("grid__item--animation");
-				}, 500);
+				
 				
 			});
 
@@ -87,25 +84,31 @@ define(['jquery', 'isotope', 'imagesLoaded'], function ($) {
 				return;
 			}
 
-			var colWidth = Math.floor($gridProxy.width() / gridColumns );
+			setTimeout(function(){
+				var colWidth = Math.floor($gridProxy.width() / gridColumns );
 
-			//set width of container based on columnWidth
-			gridOptions.masonry = {
-				// if bigger than 305, do nothing
-				columnWidth: colWidth
-			};
+				//set width of container based on columnWidth
+				gridOptions.masonry = {
+					// if bigger than 305, do nothing
+					columnWidth: colWidth
+				};
 
-			// cancel default resize event
-			$grid.css({
-				width: colWidth * gridColumns,
-				resizable: false
-			})
-			.isotope(gridOptions);
+				// cancel default resize event
+				$grid.css({
+					width: colWidth * gridColumns,
+					resizable: false
+				})
+				.isotope(gridOptions);
+			}, 100);
 		},
 
 		_applyFiltering: function(criterion) {
 			console.log(criterion);
+			
 			$grid.imagesLoaded(function(){
+				// Add animation capabilities for filtering
+				$("#js-grid").children(".grid__item").addClass("grid__item--animation");
+
 				$grid.isotope({
 					filter: criterion,
 					transitionDuration: '0.5s'
@@ -113,6 +116,11 @@ define(['jquery', 'isotope', 'imagesLoaded'], function ($) {
 
 				// Prevent resize bugs after filtering
 				$(window).smartresize();
+
+				// Remove all animation capabilities after
+				setTimeout(function(){
+					$("#js-grid").children(".grid__item").removeClass("grid__item--animation");
+				}, 500);
 			});
 		}
 

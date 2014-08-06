@@ -1,3 +1,55 @@
 /**
  * Read more elements are defined here.
  */
+.detailsview{
+	width: 100%;
+	margin-bottom: 5px;
+	position: relative;
+}
+.detailsview__wrapper{
+	padding: em(20px);
+}
+.detailsview__wrapper__img{
+	float:left;
+	margin-right: em(20px);
+}
+.detailsview__wrapper__description, .detailsview__wrapper__technologies, .detailsview__wrapper__links{
+	margin-top: em(14px);
+	width: 100%;
+
+	&:before{
+		height: 6px;
+		width: 100%;
+		background: url($images-path + 'border-img.png') repeat-x;
+		content: "";
+	}
+}
+
+.detailsview__wrapper__technologies{
+	h3{
+		float: left;
+		padding-right: em(20px, 18px);
+	}
+	ul{
+		float: left;
+	}
+	li{
+		font-size: em(14px);
+		float: left;
+		width: 50%;
+	}
+}
+
+.detailsview__wrapper__links{
+	ul{
+		margin: 0;
+	}
+	
+	li{
+		font-size: em(14px);
+
+		a{
+			padding-left: em(23px);
+		}
+	}
+}

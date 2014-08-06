@@ -16,13 +16,16 @@ define(['jquery', 'isotope', 'imagesLoaded'], function ($) {
 		$gridProxy,
 		gridColumns,
 		gridOptions = {},
-		gridImagesLoaded = false;
+		gridImagesLoaded = false,
+		detailsViewOpen = false,
+		$detailsView;
 
 	// Public API
 	return {
 		
 		init: function() {
 			
+
 			// Setup module vars
 			$grid = $("#js-grid");
 			gridColumns = 4;
@@ -70,6 +73,60 @@ define(['jquery', 'isotope', 'imagesLoaded'], function ($) {
 				e.preventDefault();
 			});
 
+
+			$detailsView =  $("#js-detailsview");
+
+			// Open details view
+			$(".js__grid__item__wrapper__rollover, .js-grid-readmore").on("click", "a", function(e){
+
+				var $this = $(this);
+				// Scroll to top
+				$("html, body").animate({ scrollTop: "0" });
+
+				// Prevents double loading
+
+				var dataId = $this.attr("data-id"),
+					dataType = $this.attr("data-type"),
+					dataOpenFunc = function() {
+						// Loading screen class
+						$detailsView.removeClass("detailsview--close");
+						// Get data from JSON after 0.5s
+						switch(dataType) {
+							// Projects
+							case "project":
+								that.loadProject(dataId);
+								break;
+						}
+						detailsViewOpen = true;
+					};
+
+				// If already open
+				if (detailsViewOpen) {
+					// If already open remove open class
+					$detailsView.addClass("detailsview--close");
+
+					setTimeout(function(){
+						dataOpenFunc();
+					}, 700);
+				} else {
+					dataOpenFunc();
+				}
+					
+
+				e.preventDefault();
+			});
+
+			// Close details view
+			$("#js-detailsview-closebtn").on("click", function(){
+				
+				$detailsView.addClass("detailsview--close");
+				
+				// Remove the other classes after animation finishes
+				setTimeout(function(){
+					$detailsView.removeClass("detailsview--open");
+				}, 1200);
+			});
+
 			
 		},
 
@@ -100,6 +157,70 @@ define(['jquery', 'isotope', 'imagesLoaded'], function ($) {
 				})
 				.isotope(gridOptions);
 			}, 100);
+		},
+
+		loadProject: function(dataId) {
+			// Load projects JSON
+			$.getJSON("data/projects.json", function(data){
+				var projectData = data[dataId];
+
+
+				// Replace main image
+				if (projectData.imagepath) {
+					var $projectImg = $("#js-detailsview-figure img");
+
+					$projectImg.attr("src", 'dist/img/' + projectData.imagepath)
+					.attr("alt", projectData.title);
+				}
+
+				// Place header text
+				$("#js-detailsview-header").html(projectData.title);
+
+				// Place content description
+				var $detailsviewDescription = $("#js-detailsview-description");
+				$detailsviewDescription.html(projectData.description);
+
+				// Place content technologies
+				var n = 0,
+					$ul = $("<ul>").addClass("detailsview__wrapper__technologies");
+
+				$detailsviewDescription.append("<hr /><h3>Technologies</h3>");
+				
+
+				for(; n < projectData.technologies.length; n++) {
+					var $li = $("<li/>")
+						.text(projectData.technologies[n]);
+					$ul.append($li);
+				}
+
+				$detailsviewDescription.append($ul)
+				.append("<div class='clearfix'></div>");
+
+
+				// Place content links
+				n = 0;
+				$ul = $("<ul>").addClass("detailsview__wrapper__links");
+
+				for(; n < projectData.links.length; n++) {
+					var $li2 = $("<li/>"),
+						$a = $('<a/>');
+
+					$a.addClass("detailsview__wrapper__links__link")
+					.text(projectData.links[n][0])
+					.attr("href", projectData.links[n][1]);
+
+					$ul.append($li2);
+					$li2.append($a);
+				}
+				$detailsviewDescription.append("<hr />")
+				.append($ul)
+				.append("<div class='clearfix'></div>");
+
+				// Remove loading state and force open and visible
+				$detailsView.addClass("detailsview--open");
+
+				console.log(projectData);
+			});
 		},
 
 		_applyFiltering: function(criterion) {

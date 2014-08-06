@@ -1,0 +1,152 @@
+{
+	"rut": {
+		"imagepath": "rut/big.jpg",
+		"title": "Really Useful Theatres",
+		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"technologies": [
+			"PHP",
+			"CMS",
+			"Expression Engine",
+			"HTML5/CSS3",
+			"JavaScript/jQuery"
+		],
+		"links": [
+			["View live website", "#"]
+		]
+	},
+	"activa": {
+		"imagepath": "activa/big.jpg",
+		"title": "Hosiery Selector",
+		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"technologies": [
+			"PHP",
+			"CMS",
+			"Expression Engine",
+			"HTML5/CSS3",
+			"JavaScript/jQuery"
+		],
+		"links": [
+			["View live website", "#"]
+		]
+	},
+	"agp": {
+		"imagepath": "agp/big.jpg",
+		"title": "AGP Interactive Tool",
+		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"technologies": [
+			"PHP",
+			"CMS",
+			"Expression Engine",
+			"HTML5/CSS3",
+			"JavaScript/jQuery"
+		],
+		"links": [
+			["View live website", "#"]
+		]
+	},
+	"ecoclock": {
+		"imagepath": "ecoclock/big.jpg",
+		"title": "Ecoclock",
+		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"technologies": [
+			"PHP",
+			"CMS",
+			"Expression Engine",
+			"HTML5/CSS3",
+			"JavaScript/jQuery"
+		],
+		"links": [
+			["View live website", "#"]
+		]
+	},
+	"freestyle": {
+		"imagepath": "freestyle/big.jpg",
+		"title": "FreeStyle",
+		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"technologies": [
+			"PHP",
+			"CMS",
+			"Expression Engine",
+			"HTML5/CSS3",
+			"JavaScript/jQuery"
+		],
+		"links": [
+			["View live website", "#"]
+		]
+	},
+	"fsi": {
+		"imagepath": "freestyle/big.jpg",
+		"title": "FreeStyle InsuLinx Switzerland",
+		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"technologies": [
+			"PHP",
+			"CMS",
+			"Expression Engine",
+			"HTML5/CSS3",
+			"JavaScript/jQuery"
+		],
+		"links": [
+			["View live website", "#"]
+		]
+	},
+	"mfb": {
+		"imagepath": "mfb/big.jpg",
+		"title": "M-F-B",
+		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"technologies": [
+			"PHP",
+			"CMS",
+			"Expression Engine",
+			"HTML5/CSS3",
+			"JavaScript/jQuery"
+		],
+		"links": [
+			["View live website", "#"]
+		]
+	},
+	"pm": {
+		"imagepath": "pm/big.jpg",
+		"title": "Paulo Melo Portfolio ",
+		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"technologies": [
+			"PHP",
+			"CMS",
+			"Expression Engine",
+			"HTML5/CSS3",
+			"JavaScript/jQuery"
+		],
+		"links": [
+			["View live website", "#"]
+		]
+	},
+	"tindrum": {
+		"imagepath": "tindrum/big.jpg",
+		"title": "Tin Drum",
+		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"technologies": [
+			"PHP",
+			"CMS",
+			"Expression Engine",
+			"HTML5/CSS3",
+			"JavaScript/jQuery"
+		],
+		"links": [
+			["View live website", "#"]
+		]
+	},
+	"wct": {
+		"imagepath": "wct/big.jpg",
+		"title": "Wound Care Today",
+		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"technologies": [
+			"PHP",
+			"CMS",
+			"Expression Engine",
+			"HTML5/CSS3",
+			"JavaScript/jQuery"
+		],
+		"links": [
+			["View live website", "#"]
+		]
+	}
+}

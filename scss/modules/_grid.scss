@@ -84,10 +84,9 @@
 	header{
 		margin: em(8px) em(10px) em(8px);
 		padding-bottom: em(8px);
-
-		a{
-			text-decoration: none;
-		}
+	}
+	h2{
+		color: $orange;
 	}
 	figure{
 		display: block;
@@ -152,9 +151,6 @@
 	}
 
 }
-.grid__item__wrapper__figure__wrapper{
-
-}
 .grid__item__wrapper__content__technologies{
 	margin-bottom: em(16px);
 	li {
@@ -211,20 +207,14 @@
 		height: 100%;
 		
 		display: table-cell;
-		a{
-			color: $white;
-			margin: 0;
-			text-transform: uppercase;
-			font-family: $montserrat;
-			font-weight: bold;
-			text-align: center;
-			font-size: em(36px, 22px);
-			line-height: em(40px, 36px);
-
-			&:hover{
-				text-decoration: none;
-			}
-		}
+		color: $white;
+		margin: 0;
+		text-transform: uppercase;
+		font-family: $montserrat;
+		font-weight: bold;
+		text-align: center;
+		font-size: em(36px, 22px);
+		line-height: em(40px, 36px);
 	}
 
 	&:hover .js__grid__item__wrapper__rollover{
@@ -239,7 +229,9 @@
 	header{
 		border-bottom-color: rgba($white, 0.5);
 	}
-
+	h2{
+		color: $white;
+	}
 	p{
 		color: $white;
 	}

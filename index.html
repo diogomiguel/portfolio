@@ -55,41 +55,26 @@
 
     <!-- START DETAILS AREA -->
     <div class="detailsview" id="js-detailsview">
-        <section class="detailsview__wrapper">
-            <figure>
-                <img src="dist/img/big.jpg" alt="Really Useful Theatres" class="detailsview__wrapper__img" />
+        <section class="detailsview__wrapper" id="js-detailsview-wrapper">
+
+            <div class="detailsview__wrapper__closebtn" id="js-detailsview-closebtn"></div>
+
+            <figure class="detailsview__wrapper__figure" id="js-detailsview-figure">
+                <img src="dist/img/blank-big.gif" alt="Project image" />
             </figure>
 
-            <header>
-                <h2 class="detailsview__wrapper__header">Really Useful Theatres</h2>
-            </header>
-            <div class="detailsview__wrapper__description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+            <div class="detailsview__wrapper__content">
+                <header>
+                    <h2 class="detailsview__wrapper__header" id="js-detailsview-header">Really Useful Theatres</h2>
+                </header>
+                <div class="detailsview__wrapper__description" id="js-detailsview-description">
+                    
+                    
+                </div>
             </div>
-            <div class="detailsview__wrapper__technologies">
-                <h3>Technologies</h3>
-
-                <ul>
-                    <li>PHP</li>
-                    <li>CMS</li>
-                    <li>Expression Engine</li>
-                    <li>HTML5/CSS3</li>
-                    <li>JavaScript/jQuery</li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-            <div class="detailsview__wrapper__links">
-                <ul>
-                    <li>
-                        <a href="#" class="detailsview__wrapper__links__link">View live website</a>
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
+            <div class="clearfix"></div>  
         </section>
-        <div class="clearfix"></div>  
+        
     </div>
     <!-- END DETAILS AREA -->
 
@@ -122,16 +107,14 @@
         			<figure>
         				<img src="dist/img/rut/thumb.jpg" alt="Really Useful Theatres" width="100%" id="js__grid__item__wrapper__figure" />
                         <div class="js__grid__item__wrapper__rollover">
-                            <a href="#">
+                            <a href="#" data-type="project" data-id="rut">
                                 Read More
                             </a>
                         </div>
         			</figure>
         			<header>
         				<h2>
-        					<a href="#">
-        						Really Useful Theatres
-        					</a>
+        				    Really Useful Theatres
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -156,8 +139,8 @@
 
         				<div class="clearfix"></div>
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="project" data-id="rut">
         							Read more
         						</a>
         					</li>
@@ -179,13 +162,11 @@
         		<section class="grid__item__wrapper grid__item__wrapper--about">
         			<header>
         				<h2>
-        					<a href="#">
-        						About me
-        					</a>
+        					About me
         				</h2>
         			</header>
                      <div class="js__grid__item__wrapper__rollover">
-                        <a href="#">
+                        <a href="#" data-type="about" data-id="about">
                             Read More
                         </a>
                     </div>
@@ -201,7 +182,7 @@
                         <img src="dist/img/tindrum/thumb.jpg" alt="Tin Drum" width="100%" id="js__grid__item__wrapper__figure" />
 
                         <div class="js__grid__item__wrapper__rollover">
-                            <a href="#">
+                            <a href="#" data-type="project" data-id="tindrum">
                                 Read More
                             </a>
                         </div>
@@ -210,9 +191,7 @@
         			
         			<header>
         				<h2>
-        					<a href="#">
-        						Tin Drum
-        					</a>
+        					Tin Drum
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -236,8 +215,8 @@
         				</ul>
         				<div class="clearfix"></div>
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="project" data-id="tindrum">
         							Read more
         						</a>
         					</li>
@@ -262,16 +241,14 @@
         			<figure>
         				<img src="dist/img/fsi/thumb.jpg" alt="FreeStyle InsuLinx CH" width="100%" id="js__grid__item__wrapper__figure" />
                         <div class="js__grid__item__wrapper__rollover">
-                            <a href="#">
+                            <a href="#" data-type="project" data-id="fsi">
                                 Read More
                             </a>
                         </div>
         			</figure>
         			<header>
         				<h2>
-        					<a href="#">
-        						FreeStyle InsuLinx Switzerland
-        					</a>
+        					FreeStyle InsuLinx Switzerland
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -295,8 +272,8 @@
         				</ul>
         				<div class="clearfix"></div>
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="project" data-id="fsi">
         							Read more
         						</a>
         					</li>
@@ -321,16 +298,14 @@
         				<img src="dist/img/pm/thumb.jpg" alt="FreeStyle InsuLinx CH" width="100%" id="js__grid__item__wrapper__figure" />
 
                         <div class="js__grid__item__wrapper__rollover">
-                            <a href="#">
+                            <a href="#" data-type="project" data-id="pm">
                                 Read More
                             </a>
                         </div>
         			</figure>
         			<header>
         				<h2>
-        					<a href="#">
-        						Paulo Melo Portfolio
-        					</a>
+        					Paulo Melo Portfolio
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -354,8 +329,8 @@
         				</ul>
         				<div class="clearfix"></div>
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="project" data-id="pm">
         							Read more
         						</a>
         					</li>
@@ -378,9 +353,7 @@
         			
         			<header>
         				<h2>
-        					<a href="#">
-        						BMI Calculator
-        					</a>
+        					BMI Calculator
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -404,8 +377,8 @@
         				</ul>
         				<div class="clearfix"></div>
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="blog" data-id="bmi">
         							Read more
         						</a>
         					</li>
@@ -430,16 +403,14 @@
         				<img src="dist/img/wct/thumb.jpg" alt="Wound Care Today" width="100%" id="js__grid__item__wrapper__figure" />
 
                         <div class="js__grid__item__wrapper__rollover">
-                            <a href="#">
+                            <a href="#" data-type="project" data-id="wct">
                                 Read More
                             </a>
                         </div>
         			</figure>
         			<header>
         				<h2>
-        					<a href="#">
-        						Wound Care Today
-        					</a>
+        					Wound Care Today
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -463,8 +434,8 @@
         				</ul>
         				<div class="clearfix"></div>
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="project" data-id="wct">
         							Read more
         						</a>
         					</li>
@@ -486,13 +457,11 @@
         		<section class="grid__item__wrapper grid__item__wrapper--about">
         			<header>
         				<h2>
-        					<a href="#">
-        						Contact me
-        					</a>
+        					Contact me
         				</h2>
         			</header>
                     <div class="js__grid__item__wrapper__rollover">
-                        <a href="#">
+                        <a href="#" data-type="about" data-id="contact">
                             Read More
                         </a>
                     </div>
@@ -506,9 +475,7 @@
         			
         			<header>
         				<h2>
-        					<a href="#">
-        						Web Meet-up
-        					</a>
+        					Web Meet-up
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -520,14 +487,14 @@
         				</p>
 
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="blog" data-id="conference2">
         							Read more
         						</a>
         					</li>
         					<li class="grid__item__wrapper__content__links__link">
         						<a href="#">
-        							Link to add-on
+        							Link to conference page
         						</a>
         					</li>
         				</ul>
@@ -545,16 +512,14 @@
         			<figure>
         				<img src="dist/img/agp/thumb.jpg" alt="Wound Care Today" width="100%" id="js__grid__item__wrapper__figure" />
                         <div class="js__grid__item__wrapper__rollover">
-                            <a href="#">
+                            <a href="#" data-type="project" data-id="agp">
                                 Read More
                             </a>
                         </div>
         			</figure>
         			<header>
         				<h2>
-        					<a href="#">
-        						AGP Interactive Tool
-        					</a>
+        					AGP Interactive Tool
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -578,8 +543,8 @@
         				</ul>
         				<div class="clearfix"></div>
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="project" data-id="agp">
         							Read more
         						</a>
         					</li>
@@ -607,16 +572,14 @@
         			<figure>
         				<img src="dist/img/activa/thumb.jpg" alt="Hosiery Selector" width="100%" id="js__grid__item__wrapper__figure" />
                         <div class="js__grid__item__wrapper__rollover">
-                            <a href="#">
+                            <a href="#" data-type="project" data-id="activa">
                                 Read More
                             </a>
                         </div>
         			</figure>
         			<header>
         				<h2>
-        					<a href="#">
-        						Hosiery Selector
-        					</a>
+        					Hosiery Selector
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -640,8 +603,8 @@
         				</ul>
         				<div class="clearfix"></div>
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="project" data-id="activa">
         							Read more
         						</a>
         					</li>
@@ -664,9 +627,7 @@
         			
         			<header>
         				<h2>
-        					<a href="#">
-        						GA Tracker
-        					</a>
+        					GA Tracker
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -690,8 +651,8 @@
         				</ul>
         				<div class="clearfix"></div>
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="blog" data-id="gatracker">
         							Read more
         						</a>
         					</li>
@@ -715,16 +676,14 @@
         			<figure>
         				<img src="dist/img/mfb/thumb.jpg" alt="MFB" width="100%" id="js__grid__item__wrapper__figure" />
                         <div class="js__grid__item__wrapper__rollover">
-                            <a href="#">
+                            <a href="#" data-type="project" data-id="mfb">
                                 Read More
                             </a>
                         </div>
         			</figure>
         			<header>
         				<h2>
-        					<a href="#">
-        						MFB
-        					</a>
+        					MFB
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -748,8 +707,8 @@
         				</ul>
         				<div class="clearfix"></div>
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="project" data-id="mfb">
         							Read more
         						</a>
         					</li>
@@ -773,16 +732,14 @@
                     <figure>
                         <img src="dist/img/ecoclock/thumb.jpg" alt="Ecoclock" width="100%" id="js__grid__item__wrapper__figure" />
                         <div class="js__grid__item__wrapper__rollover">
-                            <a href="#">
+                            <a href="#" data-type="project" data-id="ecoclock">
                                 Read More
                             </a>
                         </div>
                     </figure>
                     <header>
                         <h2>
-                            <a href="#">
-                                Ecoclock
-                            </a>
+                            Ecoclock
                         </h2>
                     </header>
                     <div class="grid__item__wrapper__content">
@@ -806,8 +763,8 @@
                         </ul>
                         <div class="clearfix"></div>
                         <ul class="grid__item__wrapper__content__links">
-                            <li class="grid__item__wrapper__content__links__readmore">
-                                <a href="#">
+                            <li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+                                <a href="#" data-type="project" data-id="ecoclock">
                                     Read more
                                 </a>
                             </li>
@@ -829,13 +786,11 @@
         		<section class="grid__item__wrapper grid__item__wrapper--about">
         			<header>
         				<h2>
-        					<a href="#">
-        						Skills
-        					</a>
+        					Skills
         				</h2>
         			</header>
                     <div class="js__grid__item__wrapper__rollover">
-                        <a href="#">
+                        <a href="#" data-type="about" data-id="skills">
                             Read More
                         </a>
                     </div>
@@ -849,9 +804,7 @@
         			
         			<header>
         				<h2>
-        					<a href="#">
-        						Web Meet-up
-        					</a>
+        					Web Meet-up
         				</h2>
         			</header>
         			<div class="grid__item__wrapper__content">
@@ -863,8 +816,8 @@
         				</p>
 
         				<ul class="grid__item__wrapper__content__links">
-        					<li class="grid__item__wrapper__content__links__readmore">
-        						<a href="#">
+        					<li class="grid__item__wrapper__content__links__readmore js-grid-readmore">
+        						<a href="#" data-type="blog" data-id="conference1">
         							Read more
         						</a>
         					</li>

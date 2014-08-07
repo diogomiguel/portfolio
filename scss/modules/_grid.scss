@@ -43,9 +43,7 @@
 	margin-bottom: 5px;
 	width: auto;
 	background-color: $white;
-	header{
-		border-bottom:1px solid rgba($grey, 0.5);
-	}
+
 	p{
 		font-size: em(12px);
 	}
@@ -87,6 +85,7 @@
 		max-width: 257px;
 		margin: 0 auto;
 		display: block;
+		width: 100%;
 	}
 	span{
 		text-indent: -9999px;
@@ -96,12 +95,11 @@
 
 .grid__item__wrapper--project{
 
-	header{
-		margin: em(8px) em(10px) em(8px);
-		padding-bottom: em(8px);
-	}
 	h2{
 		color: $orange;
+		margin: em(8px, 22px) em(10px, 22px) em(8px, 22px);
+		padding-bottom: em(8px, 22px);
+		border-bottom:1px solid rgba($grey, 0.5);
 	}
 	figure{
 		display: block;
@@ -210,12 +208,6 @@
 	height: em(190px);
 	padding-bottom: 0;
 	overflow: hidden;
-	header{
-		border-bottom: 0 none;
-		height: 100%;
-		display: table;
-		width: 100%;
-	}
 	h2 {
 		vertical-align: middle;
 		text-align: center;
@@ -237,6 +229,13 @@
 			
 	}
 }
+.grid__item__wrapper__header{
+	border-bottom: 0 none;
+	height: 100%;
+	display: table;
+	width: 100%;
+}
+
 .grid__item__wrapper--plugin{
 	@extend .grid__item__wrapper--project;
 	background-color: $blue;

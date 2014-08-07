@@ -31,3 +31,39 @@
 * html .browsehappy{
 	position:absolute;
 }
+
+/* ==========================================================================
+   Loading
+   ========================================================================== */
+
+.loading__bg{
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($black, 0);
+}
+.loading__bg--active{
+	display: block;
+	background-color: rgba($black, 0.5);
+	@include transition-duration('0.5s');
+
+	.loading__bg__loader{
+		width: 42px;
+		height: 42px;
+		margin-left: -21px;
+		margin-top: -21px;
+	}
+}
+.loading__bg__loader{
+	background: url($images-path + 'ourwork-loader.gif') center center no-repeat $white;
+	width: 0;
+	height: 0;
+	left: 50%;
+	position: fixed;
+	top: 50%;
+	margin-left: 0;
+	margin-top: 0;
+	@include border-radius(5px);
+}

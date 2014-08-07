@@ -132,3 +132,36 @@ ul.detailsview__wrapper__links{
 		}
 	}
 }
+
+/**
+ * M (tablets)
+ */
+
+@media only screen and (max-width: 960px) {
+
+	.detailsview__wrapper__figure{
+		display: none;
+	}
+	.detailsview__wrapper{
+		padding: 3%;
+	}
+	.detailsview__wrapper__content{
+
+		ul{
+			li{	
+				float: none;
+				width: auto;
+			}
+		}
+	}
+}
+
+/**
+ * XS (mobiles)
+ */
+
+@media only screen and (max-width: 480px) {
+	.detailsview{
+		display: none;
+	}
+}

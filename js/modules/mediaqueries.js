@@ -38,6 +38,8 @@ define(['jquery', 'modules/grid', 'simpleStateManager'], function ($, grid, ssm)
 					
 					// transform grid
 					grid.setMasonry(1);
+					// no filtering for mobile
+					grid.resetMasonryFilter();
 
 					console.log('enter XS - mobile');
 			    }

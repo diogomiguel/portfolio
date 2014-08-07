@@ -327,4 +327,47 @@
 	.grid__item__wrapper__content__links__readmore{
 		display: none;
 	}
+	.grid__item--active{
+		@include opacity(1);
+
+		&:after{
+			display: none;
+		}
+	}
+	.js__grid__item__wrapper__rollover{
+		position: absolute;
+		top: 0;
+		background-color: transparent; 
+		@include transition-property('none');
+
+		a{
+			top: 0;
+			content: "";
+			text-indent: -9999px;
+			&:after{
+				display: none;
+
+			}
+			&:hover{
+				text-decoration: none;
+			}
+			&:hover:after{
+				@include opacity(0.8);
+			}
+			
+		}
+
+	}
+	.grid__item__wrapper__content__links li{
+		font-size: em(14px);
+
+	}
+	.grid__item__wrapper__content__links__link a{
+		background-size: 19px;
+		padding-left: 26px;
+		background-position: 0 -16px;
+	}
+	.grid__item__wrapper--plugin .grid__item__wrapper__content__links__link a, .grid__item__wrapper--blog .grid__item__wrapper__content__links__link a{
+		background-position: 0 -54px;
+	}
 }

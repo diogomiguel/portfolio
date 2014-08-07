@@ -8,11 +8,13 @@
 require([
 	// Require the modules
 	'modules/grid',
-	'modules/mediaqueries'
-], function ($grid, $mediaqueries) {
+	'modules/mediaqueries',
+	'modules/details'
+], function (grid, mediaqueries, details) {
 	'use strict';
 
-	$grid.init();
+	grid.init();
+	details.init();
 
 	jQuery.holdReady(true);
 
@@ -24,7 +26,13 @@ require([
 		jQuery.holdReady(false);
 	});
 
-	$mediaqueries.init();
+	mediaqueries.init();
+
+	// back to top link
+	$("#js-backtop").on("click", function(e){
+		$("html, body").animate({ scrollTop: "0" });
+		e.preventDefault();
+	});
 
 	
 });

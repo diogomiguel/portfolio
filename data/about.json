@@ -1,56 +1,70 @@
 {
 	"about": {
 		"title": "About me",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"description": "<p>I am an <em>experienced front and back end developer</em> specialised in taking projects from concept to completion, leading teams of developers and working directly with clients. Moved to the UK four years ago to pursue better career opportunities and take new challenges in a much more competitive market.</p><p>A self-proclaimed geek who loves technology and everything digital.</p><p>I have been working since I graduated from Uni. I have created many public and private websites, some of them showed below. I am willing to learn and adapt quickly to new environments.<br />Presently looking for a dynamic, ambitious, growing role where I can work with bigger teams and projects.</p>",
 		"workplaces": [
-			"<small>(01/2013 - 04/2014)</small> &nbsp;-&nbsp; <strong>24sq</strong> Lead Webdeveloper",
-			"<small>(01/2013 - 04/2014)</small> &nbsp;-&nbsp; <strong>24sq</strong> Webdeveloper",
-			"<small>(01/2013 - 04/2014)</small> &nbsp;-&nbsp; <strong>Squiz</strong> Implementation Specialist",
-			"<small>(01/2013 - 04/2014)</small> &nbsp;-&nbsp; <strong>W20</strong> Webdeveloper"
+			"<small>(01/2014 - Present)</small> &nbsp;-&nbsp; <strong>24sq:</strong> Lead Web Developer",
+			"<small>(06/2011 - 01/2014)</small> &nbsp;-&nbsp; <strong>24sq:</strong> Web Developer",
+			"<small>(12/2010 - 06/2011)</small> &nbsp;-&nbsp; <strong>Squiz:</strong> Implementation Specialist",
+			"<small>(09/2008 - 10/2010)</small> &nbsp;-&nbsp; <strong>W20:</strong> Web Developer"
 		],
 		"interests": [
 			"Board games",
 			"Pet rats",
 			"Video games",
-			"Fantasy books",
-			"Psychology"
+			"Fantasy",
+			"Psychology",
+			"Digital",
+			"Pole dancing",
+			"Metal music",
+			"Statistics"
 		],
 		"cv": [
-			["Download my CV", "dist/cv/cv.pdf"]
+			["Download my CV", "dist/cv/cv_diogo.pdf"]
 		]
 	},
 	"contact": {
 		"title": "Contact me",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"description": "<p>I'd love to hear from you so please either send an email to diogo.miguel.fonseca@gmail.com or call me to discuss any job offers.</p>",
 		"contacts": [
-			"<strong>Phone:</strong> 000000000",
-			"<strong>E-mail:</strong> diogo.miguel.fonseca@gmail.com",
-			"<strong>LinkedIn:</strong> <a href='#'>diogomiguel</a>"
+ 			"<strong>Phone:</strong> 07572642365",
+			"<strong>E-mail:</strong> <a href='mailto:diogo.miguel.fonseca@gmail.com'>diogo.miguel.fonseca@gmail.com</a>",
+			"<strong>LinkedIn:</strong> <a href='http://uk.linkedin.com/in/diogomiguelfonseca' target='_blank'>diogomiguel</a>"
 		]
 	},
 	"skills": {
 		"title": "My skills",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"description": "<p>Always learning and always keen to work with new technologies and tools. I’m an all rounder with both front end and back end development skills. My work has been primarily focussed on:</p>",
+		
+		"frontend": [
+			"(x)HTML(5)",
+			"CSS and SASS",
+			"JavaScript",
+			"Ajax",
+			"jQuery",
+			"jQuery Mobile",
+			"Sencha Touch",
+			"AngularJS (novice)",
+			"Backbone"
+		],
 		"backend": [
 			"PHP",
-			"CMS",
+			"MySQL",
+			"Ruby on Rails (it's been a long time ^^)",
+			"Zend",
+			"Symfony",
+			"CodeIgniter",
 			"Expression Engine",
-			"HTML5/CSS3",
-			"JavaScript/jQuery"
-		],
-		"frontend": [
-			"PHP",
-			"CMS",
-			"Expression Engine",
-			"HTML5/CSS3",
-			"JavaScript/jQuery"
+			"Perch CMS"
 		],
 		"tools": [
-			"PHP",
-			"CMS",
-			"Expression Engine",
-			"HTML5/CSS3",
-			"JavaScript/jQuery"
+			"Grunt",
+			"Bower",
+			"Yeoman",
+			"Use-init",
+			"Vagrant",
+			"Handlebars",
+			"Git/SVN"
 		]
 	}
 }

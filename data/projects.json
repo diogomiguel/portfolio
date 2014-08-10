@@ -2,151 +2,157 @@
 	"rut": {
 		"imagepath": "rut/big.jpg",
 		"title": "Really Useful Theatres",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"description": "<p><strong>Really Useful Theatres Group</strong> owns and operates six commercial theatres in the heart of London’s West End. The Group is wholly owned by Andrew Lloyd Webber.</p><p>I was engaged to build their new website from the ground up.<br />I decided to use <strong>Expression Engine</strong> for being a CMS solutions that offered the flexibility and the room for customisation needed by this project.<br />As part of the tracking requirements, I developed a EE module that enables <strong>Server-Side Google Analytics</strong> tracking. Later I released this as a free add-on for the devot:ee community</p><p>Most of the <strong>JavaScript</strong> was built in a <strong>modular DRY</strong> way, allowing to use the same classes to build all the carousels and timelines of the website</p><p>The results are great - the site bounce rate reduce by a third and visitors up from a few hundred to a few thousand per day!</p><p>I am working on the specification document for the mobile website</p><p><small>developed as a twentyfoursquare employee.</small></p>",
 		"technologies": [
-			"PHP",
-			"CMS",
-			"Expression Engine",
 			"HTML5/CSS3",
-			"JavaScript/jQuery"
+			"JavaScript/jQuery",
+			"PHP",
+			"Expression Engine",
+			"Grunt",
+			"Git",
+			"Sass"
 		],
 		"links": [
-			["View live website", "#"]
+			["View live website", "http://reallyusefultheatres.co.uk"],
+			["View GA Tracker module", "https://github.com/diogomiguel/ee_ga_tracker"]
 		]
 	},
 	"activa": {
 		"imagepath": "activa/big.jpg",
 		"title": "Hosiery Selector",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"description": "<p><strong>Activa Healthcare</strong> is the market leader in compression hosiery and the fastest growing woundcare company in the UK.</p><p>Activa provide an online product sizer but this isn't always accessible by HCPs on the move making house calls. Therefore I was approached with the challenge of building my first big mobile application that gave HCPs all this information at their finger tips.</p><p>To make sure the app was available to as many HCPs as possible, I decided to build a <strong>hybrid native / HTML5 application</strong> using <strong>jQuery mobile</strong> for the UI and <strong>PhoneGap</strong> for the compiling. This meant developing versions for Windows, Android, Blackberry and Apple mobile phones and tablets.</p><p>The app was optimised and re-factored having in mind each operating system requirements and UI limitations.<br />I was also charged with all the compatibility testing and deployment processes</p><p>The app has been promoted by the British Lymphology Society who promote professional standards of care and has also been entered in a number of industry awards.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
 		"technologies": [
-			"PHP",
-			"CMS",
-			"Expression Engine",
+			"PhoneGap",
+			"jQuery Mobile",
 			"HTML5/CSS3",
-			"JavaScript/jQuery"
+			"JavaScript/jQuery",
+			"XCode",
+			"Eclipse",
+			"Visual Studio Express",
+			"Blackberry Webworks",
+			"Sass"
 		],
 		"links": [
-			["View live website", "#"]
+			["App Store", "https://itunes.apple.com/gb/app/activa-hosiery-selector/id633402356?mt=8"],
+			["Windows Phone Apps", "http://www.windowsphone.com/en-gb/store/app/hosiery-selector/ae93972f-2c13-4ce9-8c60-5d172e6119e0"],
+			["Google Play", "https://play.google.com/store/apps/details"],
+			["Blackberry World", "http://appworld.blackberry.com/webstore/content/26689889/"]
 		]
 	},
 	"agp": {
 		"imagepath": "agp/big.jpg",
 		"title": "AGP Interactive Tool",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"description": "<p>The company's <strong>biggest Pharma client</strong>, briefed the agency on another project to be implemented on their abbottnextfrontier.com website.</p><p>There were two big challenges in completing this project: the tight deadline and the required <strong>compatibility with IE8+</strong></p><p>We outsourced most of the front end <strong>HTML/CSS</strong> work and I was called upon to help the freelancer to complete the more complex scripting tasks.<br />I had less than one week to grab all the static pages and together with the freelancer put them together in an animated <strong>HTML5 Ajax</strong> presentation.</p><p>A modular <strong>JavaScript</strong> code for all the website was developed re-using elements from other projects.<br />The result was a very concise, re-usable and dry collection of classes, which were able to get information from each slide and apply configurable rules to address the individual interaction elements.<br />In less than one day we managed to transform isolated HTML pages into a web presentation <strong>compatible with IE7+</strong></p><p>We had one extra day to deal with minor amends sent by the client, who was very happy with final result</p><p><small>developed as a twentyfoursquare employee.</small></p>",
 		"technologies": [
-			"PHP",
-			"CMS",
-			"Expression Engine",
 			"HTML5/CSS3",
-			"JavaScript/jQuery"
+			"JavaScript/jQuery",
+			"Ajax",
+			"Sass"
 		],
 		"links": [
-			["View live website", "#"]
+			["View web presentation", "https://abbottnextfrontier.com/interactive-tool/index.html"]
 		]
 	},
 	"ecoclock": {
 		"imagepath": "ecoclock/big.jpg",
 		"title": "Ecoclock",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"description": "<p>Being the oldest project in my portfolio, the <strong>Ecoclock</strong> was probably one of my biggest front end development challenges</p><p>Back when it was developed (early 2010), there were not many tools and libraries to enhance and ease front end implementations. Moreover most CSS3 new styles who would benefit this project (e.g. background-size), were not implemented yet. Therefore resizing the background image, keeping the full-screen resolution and respecting the aspect ratio whilst repositioning the icons to be on top of the appropriate elements of the image, required some tailored <strong>JavaScript</strong> to do all the math.</p><p><strong>Ajax</strong> was used to load pages built in PHP, calling a 3rd party <strong>web service</strong> to get all the data presented.<br />The <strong>PHP</strong> pages parsed all the returned <strong>XML</strong> from the chosen forecasting service and from the internal hotel bespoke system.<br />To achieve the final result, I had to work really close to the company that developed the aforementioned system.</p><p>The hard-work paid off by turning out to be one of the most enjoyable and beautifully designed projects I've ever worked on, even though the project could do some re-factoring and maintenance.</p><p><small>developed as a W20 employee.</small></p>",
 		"technologies": [
+			"HTML/CSS",
+			"JavaScript/jQuery",
 			"PHP",
-			"CMS",
-			"Expression Engine",
-			"HTML5/CSS3",
-			"JavaScript/jQuery"
+			"XML"
 		],
 		"links": [
-			["View live website", "#"]
-		]
-	},
-	"freestyle": {
-		"imagepath": "freestyle/big.jpg",
-		"title": "FreeStyle",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
-		"technologies": [
-			"PHP",
-			"CMS",
-			"Expression Engine",
-			"HTML5/CSS3",
-			"JavaScript/jQuery"
-		],
-		"links": [
-			["View live website", "#"]
+			["View live website", "http://areias.cnet.pt:8888/ecoclocken/"]
 		]
 	},
 	"fsi": {
 		"imagepath": "freestyle/big.jpg",
-		"title": "FreeStyle InsuLinx Switzerland",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
-		"technologies": [
+		"title": "Abbott Diabetes Care",
+		"description": "<p>As the biggest client of twentyfoursquare, most of my projects were for <strong>Abbott Diabetes Care</strong>, part of Abbott which is a global, broad-based health care company devoted to pharmaceuticals and medical products. The company employs more than 65,000 people and markets its products in more than 130 countries.</p><p>Most of the tasks were improvements to their main website, which we inherited as a <strong>Zend PHP</strong> project developed by another company.<br />Amongst others, I re-factored the server-side code, validated the <strong>HTML</strong> accordingly to <strong>W3C</strong> requirements, developed new sections and implemented new UI elements.<br />Currently I am working on the new responsive <strong>Expression Engine</strong> website, currently going through the latest approval processes.</p><br /><p>Some other smaller micro websites were developed for the same client following strict guidelines and technical requirements.</p><p>The key elements across the different websites, are the <em>request meter forms</em>, that are the main traffic source of the websites and generate thousands of new entries weekly.<br />Most forms are integrated with their <strong>Sage</strong> database and use a <strong>Postcode look-up</strong> tool web service to prevent duplicate entries.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
+		"technologies": [ 
+			"HTML/CSS",
+			"JavaScript/jQuery",
 			"PHP",
-			"CMS",
+			"Zend",
 			"Expression Engine",
-			"HTML5/CSS3",
-			"JavaScript/jQuery"
+			"Sass",
+			"Ajax",
+			"Git/SVN"
 		],
 		"links": [
-			["View live website", "#"]
+			["View Abbott Diabetes Care website", "http://www.abbottdiabetescare.co.uk"],
+			["View FreeStyle Switzerland website", "http://freestyleinsulinx.ch"],
+			["View FreeStyle Optium Neo section", "http://abbottdiabetescare.co.uk/your-products/freestyle-optium-neo"]
 		]
 	},
 	"mfb": {
 		"imagepath": "mfb/big.jpg",
 		"title": "M-F-B",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"description": "<p><strong>MFB</strong> is a specialist shipping law firm provide a advice on shipping related litigation, arbitration and alternative dispute resolution.<br />I had the pleasure to do from scratch their new website.</p><p>It is a small website built in PHP using the <strong>in-house CMS</strong>.<br />During the development of this website, I had the chance to improve many features of the PHP bespoke CMS system, pushing them after to the master version.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
 		"technologies": [
+			
+			"HTML5/CSS",
 			"PHP",
 			"CMS",
-			"Expression Engine",
-			"HTML5/CSS3",
 			"JavaScript/jQuery"
 		],
 		"links": [
-			["View live website", "#"]
+			["View live website", "http://m-f-b.co.uk/"]
 		]
 	},
 	"pm": {
 		"imagepath": "pm/big.jpg",
-		"title": "Paulo Melo Portfolio ",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"title": "Paulo Melo Portfolio",
+		"description": "<p>Paulo Melo, a friend from Uni times, got in touch asking me to develop his portfolio website.<br />As a graphic designer, he produces all the design elements and hired a fellow web designer to produce most <strong>HTML/CSS</strong></p><p>My main job was to create all the <strong>JavaScript</strong>, improve the HTML/CSS code and create a small back end where he could update every aspect of the website.</p><p>I decided to use <strong>Symfony</strong> for the job, using this project as an opportunity to explore a new framework.<br />It proved to be the right decision, since the Symfony helpers provide a quick way to create a simple yet effective Back end admin panel, allowing me to save time by re-using generic modules and focus on other areas of the project.</p><p>This was by far the most enjoyable freelance work I've ever undertook and Paulo was very happy with the final result surpassing all his expectations.<br />Thus far he has recommended me to most of his friends and peers who are in need of some development help.</p>",
 		"technologies": [
 			"PHP",
-			"CMS",
-			"Expression Engine",
-			"HTML5/CSS3",
-			"JavaScript/jQuery"
+			"JavaScript/jQuery",
+			"Symfony"
 		],
 		"links": [
-			["View live website", "#"]
+			["View live website", "http://www.paulobrandaomelo.com"]
 		]
 	},
 	"tindrum": {
 		"imagepath": "tindrum/big.jpg",
 		"title": "Tin Drum",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
-		"technologies": [
-			"PHP",
-			"CMS",
-			"Expression Engine",
+		"description": "<p><strong>Tin Drum</strong> is a small independent, full service music consultancy.<br />I had the pleasure to built the redesign of their current website, that is now in beta version.</p><p>The new <strong>responsive website</strong> strongly relies on 2D imagery and parallaxing to highlight the creative nature of the company.<br />For the first time I used the <strong>use-init Yeoman generator</strong> to achieve an MVC modular front end, using <strong>RequireJS</strong> to smartly load the different <strong>JavaScript</strong> modules.<br /><strong>SimpleStateManager</strong> <strong>Bower</strong> plug-in was used to help with all the <strong>mediaqueries</strong> JavaScript manipulation and <strong>Skrollr</strong> to create pixel-aware, beautifully synchronized parallax animations</p><p><strong>Perch CMS</strong> proved to be the right CMS choice, due to it's simplicity and flexible integration.<br />Performance was a key aspect in this project and <strong>Grunt</strong> plug ins were used to minify, concat and optimise all aspects of the front end implementation</p><p>This joy of a project enabled me to deeply strengthen my front end skills, leaving both the client and me proud of the final result.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
+		"technologies": [			
 			"HTML5/CSS3",
-			"JavaScript/jQuery"
+			"JavaScript/jQuery",
+			"Responsive",
+			"Parallax",
+			"Perch CMS",
+			"Bower",
+			"Grunt",
+			"Yeoman",
+			"RequireJS",
+			"Use-init",
+			"JSON",
+			"Git"
 		],
 		"links": [
-			["View live website", "#"]
+			["View beta version", "http://tindrum.24sq.com"],
+			["Code examples on GitHub", "https://github.com/diogomiguel/t-drum"]
 		]
 	},
 	"wct": {
 		"imagepath": "wct/big.jpg",
 		"title": "Wound Care Today",
-		"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+		"description": "<p><strong>Wound Care Today</strong> brings together UK and international media in one essential resource, offering a  window to all that is going on in the world of wounds, and they needed a strong online presence.<br />Firstly, a native iOS simple Ad-hoc app was built in order to collect pre-website launch registrations during a major industry related event.<br />Secondly, the <strong>responsive website</strong> was build, powered by the in-house <strong>PHP CMS</strong>.</p><p>The Wound Care Today app, even though it was a very simple one, it was my very first published iOS native app and one of my biggest challenges.<br />Learning <strong>Objective C</strong> was very enjoyable and massively improved my whole <strong>OOP</strong> understanding.</p><p>The website was built from scratch with PHP, including all the login and registration processes, as well as the data imports and the Back end.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
 		"technologies": [
+			"HTML5/CSS",
+			"JavaScript/jQuery",
 			"PHP",
-			"CMS",
-			"Expression Engine",
-			"HTML5/CSS3",
-			"JavaScript/jQuery"
+			"Responsive",
+			
+			"Objective C",
+			"Sass"
 		],
 		"links": [
-			["View live website", "#"]
+			["View live website", "http://woundcare-today.com"]
 		]
 	}
 }

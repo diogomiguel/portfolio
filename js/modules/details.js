@@ -99,10 +99,17 @@ define(['jquery'], function ($) {
 			$.getJSON(projectsJson, function(data){
 				var projectData = data[dataId];
 
-				// Remove picture if exists
-				$('#js-detailsview-figure').remove();
 
+				
 
+				// Place header text
+				$("#js-detailsview-header").html(projectData.title);
+
+				// Place content description
+				var $detailsviewDescription = $("#js-detailsview-description");
+					
+				// Clean previous content
+				$detailsviewDescription.html("");
 				// Replace main image
 				if (projectData.imagepath) {
 					var $projectImg = $("<img/>").attr('src', 'dist/img/blank-big.gif'),
@@ -113,15 +120,12 @@ define(['jquery'], function ($) {
 
 					$projectFigure.append($projectImg);
 
-					$('#js-detailsview-wrapper').prepend($projectFigure);
+					$detailsviewDescription.append($projectFigure);
 				}
 
-				// Place header text
-				$("#js-detailsview-header").html(projectData.title);
-
-				// Place content description
-				var $detailsviewDescription = $("#js-detailsview-description");
-				$detailsviewDescription.html(projectData.description);
+				$detailsviewDescription.append(projectData.description);
+				
+				$detailsviewDescription.append("<div class='clearfix'></div>");
 
 				// Place content technologies
 				that._createDetailsList("Technologies", "detailsview__wrapper__technologies", projectData.technologies, $detailsviewDescription);
@@ -176,14 +180,16 @@ define(['jquery'], function ($) {
 						that._createDetailsList("Contact Details", "detailsview__wrapper__contacts", aboutData.contacts, $detailsviewDescription);
 						break;
 					case 'skills':
-						// BackEnd list
-						that._createDetailsList("Back End Skills", "detailsview__wrapper__backend", aboutData.backend, $detailsviewDescription);
+						
 
 						// FrontEnd list
 						that._createDetailsList("Front End Skills", "detailsview__wrapper__frontend", aboutData.frontend, $detailsviewDescription);
 
+						// BackEnd list
+						that._createDetailsList("Back End Skills", "detailsview__wrapper__backend", aboutData.backend, $detailsviewDescription);
+
 						// Tools list
-						that._createDetailsList("Productivity Tools", "detailsview__wrapper__tools", aboutData.tools, $detailsviewDescription);
+						that._createDetailsList("Tools and Miscs", "detailsview__wrapper__tools", aboutData.tools, $detailsviewDescription);
 						break;
 				}
 					
@@ -264,7 +270,8 @@ define(['jquery'], function ($) {
 
 				$a.addClass("detailsview__wrapper__links__link")
 				.text(dataObj[n][0])
-				.attr("href", dataObj[n][1]);
+				.attr("href", dataObj[n][1])
+				.attr("target", "_blank");
 
 				$ul.append($li);
 				$li.append($a);

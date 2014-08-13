@@ -33,7 +33,7 @@
 	}
 }
 .detailsview--close{
-	margin-bottom: 5px;
+	margin-bottom: 0;
 	max-height: 0;
 	@include transition-duration('0.6s');
 	.detailsview__wrapper{
@@ -98,6 +98,7 @@
 			font-size: em(14px);
 			float: left;
 			width: 50%;
+			min-width: 200px;
 		}
 		&.detailsview__wrapper__links{
 			margin: 0;

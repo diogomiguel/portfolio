@@ -13,8 +13,8 @@
 			"Sass"
 		],
 		"links": [
-			["View live website", "http://reallyusefultheatres.co.uk"],
-			["View GA Tracker module", "https://github.com/diogomiguel/ee_ga_tracker"]
+			["Link to live website", "http://reallyusefultheatres.co.uk"],
+			["Link to GA Tracker module", "https://github.com/diogomiguel/ee_ga_tracker"]
 		]
 	},
 	"activa": {
@@ -50,7 +50,7 @@
 			"Sass"
 		],
 		"links": [
-			["View web presentation", "https://abbottnextfrontier.com/interactive-tool/index.html"]
+			["Link to web presentation", "https://abbottnextfrontier.com/interactive-tool/index.html"]
 		]
 	},
 	"ecoclock": {
@@ -64,13 +64,13 @@
 			"XML"
 		],
 		"links": [
-			["View live website", "http://areias.cnet.pt:8888/ecoclocken/"]
+			["Link to live website", "http://areias.cnet.pt:8888/ecoclocken/"]
 		]
 	},
 	"fsi": {
 		"imagepath": "freestyle/big.jpg",
 		"title": "Abbott Diabetes Care",
-		"description": "<p>As the biggest client of twentyfoursquare, most of my projects were for <strong>Abbott Diabetes Care</strong>, part of Abbott which is a global, broad-based health care company devoted to pharmaceuticals and medical products. The company employs more than 65,000 people and markets its products in more than 130 countries.</p><p>Most of the tasks were improvements to their main website, which we inherited as a <strong>Zend PHP</strong> project developed by another company.<br />Amongst others, I re-factored the server-side code, validated the <strong>HTML</strong> accordingly to <strong>W3C</strong> requirements, developed new sections and implemented new UI elements.<br />Currently I am working on the new responsive <strong>Expression Engine</strong> website, currently going through the latest approval processes.</p><br /><p>Some other smaller micro websites were developed for the same client following strict guidelines and technical requirements.</p><p>The key elements across the different websites, are the <em>request meter forms</em>, that are the main traffic source of the websites and generate thousands of new entries weekly.<br />Most forms are integrated with their <strong>Sage</strong> database and use a <strong>Postcode look-up</strong> tool web service to prevent duplicate entries.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
+		"description": "<p>As the biggest client of twentyfoursquare, most of my projects were for <strong>Abbott Diabetes Care</strong>, part of Abbott which is a global, broad-based health care company devoted to pharmaceuticals and medical products. The company employs more than 65,000 people and markets its products in more than 130 countries.</p><p>Most of the tasks were improvements to their main website, which we inherited as a <strong>Zend PHP</strong> project developed by another company.<br />Amongst others, I re-factored the server-side code, validated the <strong>HTML</strong> accordingly to <strong>W3C</strong> requirements, developed new sections and implemented new UI elements.<br />Currently I am working on the new responsive <strong>Expression Engine</strong> website going through the latest approval processes.</p><br /><p>Some other smaller micro websites were developed for the same client following strict guidelines and technical requirements.</p><p>The key elements across the different websites, are the <em>request meter forms</em>, that are the main traffic source of the websites and generate thousands of new entries weekly.<br />Most forms are integrated with their <strong>Sage</strong> database and use a <strong>Postcode look-up</strong> tool web service to prevent duplicate entries.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
 		"technologies": [ 
 			"HTML/CSS",
 			"JavaScript/jQuery",
@@ -82,9 +82,9 @@
 			"Git/SVN"
 		],
 		"links": [
-			["View Abbott Diabetes Care website", "http://www.abbottdiabetescare.co.uk"],
-			["View FreeStyle Switzerland website", "http://freestyleinsulinx.ch"],
-			["View FreeStyle Optium Neo section", "http://abbottdiabetescare.co.uk/your-products/freestyle-optium-neo"]
+			["Link to Abbott Diabetes Care website", "http://www.abbottdiabetescare.co.uk"],
+			["Link to FreeStyle Switzerland website", "http://freestyleinsulinx.ch"],
+			["Link to FreeStyle Optium Neo section", "http://abbottdiabetescare.co.uk/your-products/freestyle-optium-neo"]
 		]
 	},
 	"mfb": {
@@ -99,7 +99,7 @@
 			"JavaScript/jQuery"
 		],
 		"links": [
-			["View live website", "http://m-f-b.co.uk/"]
+			["Link to live website", "http://m-f-b.co.uk/"]
 		]
 	},
 	"pm": {
@@ -112,7 +112,7 @@
 			"Symfony"
 		],
 		"links": [
-			["View live website", "http://www.paulobrandaomelo.com"]
+			["Link to live website", "http://www.paulobrandaomelo.com"]
 		]
 	},
 	"tindrum": {
@@ -134,8 +134,22 @@
 			"Git"
 		],
 		"links": [
-			["View beta version", "http://tindrum.24sq.com"],
+			["Link to beta version", "http://tindrum.24sq.com"],
 			["Code examples on GitHub", "https://github.com/diogomiguel/t-drum"]
+		]
+	},
+	"twentyfoursquare": {
+		"imagepath": "24sq/big.jpg",
+		"title": "Twentyfoursquare",
+		"description": "<p>The previous website of the agency I am currently employed at - <strong>twentyfoursquare</strong> - was entirely built in Flash.<br />As we were getting more and more visits from mobile devices and clients searching for responsive solutions, it became clear we needed a more compatible approach.</p><p>The new site has been built to adapt to the size of the screen you're viewing it, i.e. optimising your experience regardless of your choice of platform.</p><p>There are four different sizes which should pretty much cover all devices. I've written <strong>mediaqueries</strong> to work out the width of the screen and serve the appropriate <strong>CSS</strong> for that window. The layout changes and any assets are resized accordingly.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
+		"technologies": [			
+			"HTML5/CSS3",
+			"JavaScript/jQuery",
+			"Responsive",
+			"PHP"
+		],
+		"links": [
+			["Link to live website", "http://24sq.com"]
 		]
 	},
 	"wct": {
@@ -152,7 +166,19 @@
 			"Sass"
 		],
 		"links": [
-			["View live website", "http://woundcare-today.com"]
+			["Link to live website", "http://woundcare-today.com"]
+		]
+	},
+	"whitedesk": {
+		"imagepath": "whitedesk/big.jpg",
+		"title": "The White Desk",
+		"description": "<p>Web portfolio for a fellow web designer friend, built around 2010 in <strong>Flash</strong> and <strong>ActionScript 3</strong></p><p>All graphics and animations were created by him. My goal was to put all the animations together in an updateable, creative web experience</p><p>All the elements are dynamically inserted in the animation through code, reserving the timeline for individual <strong>MovieClip</strong> stop-motion animations</p><p>It was hard-work but final result paid-off</p>",
+		"technologies": [
+			"ActionScript 3",
+			"Flash"
+		],
+		"links": [
+			["Link to live website", "http://thewhitedesk.com/"]
 		]
 	}
 }

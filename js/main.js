@@ -16,15 +16,6 @@ require([
 	grid.init();
 	details.init();
 
-	jQuery.holdReady(true);
-
-	
-
-	var $window = $(window);
-
-	$window.load(function() {
-		jQuery.holdReady(false);
-	});
 
 	mediaqueries.init();
 

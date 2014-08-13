@@ -149,6 +149,14 @@ define(['jquery', 'modules/details', 'isotope', 'imagesLoaded', 'lazyload'], fun
 			console.log(criterion);
 			
 			$grid.imagesLoaded(function(){
+				// Make sure lazy loading is working
+				$(".js__grid__item__wrapper__figure").lazyload({
+					effect : "fadeIn"
+				});
+
+				// Close details view
+				$("#js-detailsview-closebtn").click();
+
 				// Add animation capabilities for filtering
 				$("#js-grid").children(".grid__item").addClass("grid__item--animation");
 

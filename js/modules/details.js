@@ -118,7 +118,15 @@ define(['jquery'], function ($) {
 					$projectImg.attr("src", 'dist/img/' + projectData.imagepath)
 					.attr("alt", projectData.title);
 
-					$projectFigure.append($projectImg);
+					// Insert image in link
+					var $projectLink = $("<a/>");
+
+					$projectLink.html($projectImg)
+					.attr("href", projectData.links[0][1])
+					.attr("target", "_blank");
+
+
+					$projectFigure.append($projectLink);
 
 					$detailsviewDescription.append($projectFigure);
 				}

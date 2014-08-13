@@ -17,7 +17,8 @@
 			"Digital",
 			"Pole dancing",
 			"Metal music",
-			"Statistics"
+			"Statistics",
+			"Opera and musicals"
 		],
 		"cv": [
 			["Download my CV", "dist/cv/cv_diogo.pdf"]
@@ -25,7 +26,7 @@
 	},
 	"contact": {
 		"title": "Contact me",
-		"description": "<p>I'd love to hear from you so please either send an email to diogo.miguel.fonseca@gmail.com or call me to discuss any job offers.</p>",
+		"description": "<p>I'd love to hear from you so please either send an email to diogo.miguel.fonseca@gmail.com or call me to discuss any job opportunities.</p>",
 		"contacts": [
  			"<strong>Phone:</strong> 07572642365",
 			"<strong>E-mail:</strong> <a href='mailto:diogo.miguel.fonseca@gmail.com'>diogo.miguel.fonseca@gmail.com</a>",
@@ -44,8 +45,7 @@
 			"jQuery",
 			"jQuery Mobile",
 			"Sencha Touch",
-			"AngularJS (novice)",
-			"Backbone"
+			"AngularJS (novice)"
 		],
 		"backend": [
 			"PHP",
@@ -63,8 +63,8 @@
 			"Yeoman",
 			"Use-init",
 			"Vagrant",
-			"Handlebars",
-			"Git/SVN"
+			"Git/SVN",
+			"Dandelion (automated deployment)"
 		]
 	}
 }

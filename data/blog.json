@@ -15,7 +15,7 @@
 	},
 	"bmi": {
 		"title": "BMI Calculator",
-		"description": "<p>After implementing the <strong>BMI Calculator</strong> custom module in a <strong>Expression Engine</strong> project, I decised to clean up the code and release it to the public as a free add-on.</p><p>The Body Mass Index (or BMI) Calculator is a way of seeing if your weight is appropriate for your height.</p><p>This is just a server-side implementation. Client side validation is not mandatory but recommended.</p><p>Supports both imperial and metric units (defaults to metric if values for both are submitted).</p>",
+		"description": "<p>After implementing the <strong>BMI Calculator</strong> custom module in a <strong>Expression Engine</strong> project, I decided to clean up the code and release it to the public as a free add-on.</p><p>The Body Mass Index (or BMI) Calculator is a way of seeing if your weight is appropriate for your height.</p><p>This is just a server-side implementation. Client side validation is not mandatory but recommended.</p><p>Supports both imperial and metric units (defaults to metric if values for both are submitted).</p>",
 		"links": [
 			["Plug-in on GitHub", "https://github.com/diogomiguel/ee_bmi_calculator"],
 			["Plug-in on Devot:ee", "http://devot-ee.com/add-ons/body-mass-index-calculator"]

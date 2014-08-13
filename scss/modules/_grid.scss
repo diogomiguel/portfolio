@@ -276,6 +276,64 @@ ul.grid__item__wrapper__content__technologies{
 	}
 }
 
+.js__grid__item__wrapper__rollover{
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($black, 0.8); 
+	content: " ";
+	left: 0;
+	@include transition-property('top');
+	@include transition-duration('0.5s');
+	@include transition-timing-function('ease-out');
+
+	a{
+		
+		height: 100%;
+		display: block;
+		font-size: em(18px);
+		font-family: $montserrat;
+		text-align: center;
+		top: 0;
+		position: relative;
+		color: $white;
+		width: 100%;
+		top: 52.5%;
+		&:after{
+			width: 43px;
+			height: 43px;
+			margin-top: -45px;
+			content: "";
+			position: absolute;
+			background: url($images-path + "icons-big.png") no-repeat center 0;
+			left: 50%;
+			margin-left: -21.5px;
+		}
+		&:hover{
+			text-decoration: none;
+		}
+		&:hover:after{
+			@include opacity(0.8);
+		}
+		
+	}
+
+}
+
+//-----------------------------------------------------------------------
+// Modernizr specific
+//-----------------------------------------------------------------------
+
+
+.touch{
+	.js__grid__item__wrapper__rollover{
+		top: 0;
+		@include opacity(0);
+
+	}
+}
+
 //-----------------------------------------------------------------------
 // Mediaqueries
 //-----------------------------------------------------------------------

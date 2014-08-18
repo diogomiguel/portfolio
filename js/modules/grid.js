@@ -7,7 +7,7 @@
 // Set default
 
 
-define(['jquery', 'modules/details', 'isotope', 'imagesLoaded', 'lazyload'], function ($, details) {
+define(['jquery', 'modules/details', 'simpleStateManager', 'isotope', 'imagesLoaded', 'lazyload'], function ($, details, ssm) {
 
 	// Strict mode to prevent sloppy JS
 	'use strict';
@@ -16,99 +16,9 @@ define(['jquery', 'modules/details', 'isotope', 'imagesLoaded', 'lazyload'], fun
 		$gridProxy,
 		gridColumns,
 		gridOptions = {},
-		gridImagesLoaded = false;
+		gridImagesLoaded = false,
 
-	// Public API
-	return {
-		
-		init: function() {
-			
-
-			// Setup module vars
-			$grid = $("#js-grid");
-			gridColumns = 4;
-			gridOptions = {
-				itemSelector: ".grid__item",
-				layoutMode: "masonry",
-				resizable: false,
-				animationEngine: "best-available"
-			};
-			// fake grid to serve as proxy for dimensions 
-			$gridProxy = $grid.clone().empty().css({ visibility: 'hidden' });
-
-			// place proxy
-			$grid.after($gridProxy);
-
-			var that = this;
-
-
-			// Lazyload images
-			$(".js__grid__item__wrapper__figure").lazyload({
-				effect : "fadeIn"
-			});
-
-			// Execute isotope when images loaded
-			$grid.imagesLoaded(function(){
-				console.log("images loaded");
-
-				// images loaded!
-				gridImagesLoaded = true;
-
-				// on debouced resize do a hack to get real percentage widths
-				$(window).smartresize( function() {
-					that.setMasonry();
-				}).smartresize();
-
-				
-				
-			});
-
-			// Top nav filtering
-			var $topNav = $('#js-topnav');
-
-			$topNav.on("click", "a", function(e){
-				var $this = $(this),
-					criterion = $this.attr("data-filter");
-
-				$topNav.find("a").removeClass("topnav__nav__item--active");
-				$this.addClass("topnav__nav__item--active");
-				that._applyFiltering(criterion);
-
-				e.preventDefault();
-			});
-
-			// Open details view
-			$(".js__grid__item__wrapper__rollover, .js-grid-readmore").on("click", function(e){
-				// Mobile do not apply this behaviour
-				if (window.currentMQ !== "XS") {
-					
-					// Find grid item parent and make it active after disabling already active ones
-					$grid.children('.grid__item--active').removeClass('grid__item--active');
-
-					// Open details view
-					details.open($(this));
-
-					// Scroll to top
-					$("html, body").animate({ scrollTop: "0" });
-
-					e.preventDefault();
-				}
-				
-			});
-
-			// Close details view
-			$("#js-detailsview-closebtn").on("click", function(){
-				// Make all grid elements active again
-				$grid.children('.grid__item--active').removeClass('grid__item--active');
-
-				// Close details view
-				details.close();
-			});
-
-			
-		},
-
-		setMasonry: function(newGridColumns) {
+		setMasonry = function(newGridColumns) {
 			// Has newGridColumns argument = change number of columns in the grid
 			if (newGridColumns) {
 				gridColumns = newGridColumns;
@@ -137,7 +47,7 @@ define(['jquery', 'modules/details', 'isotope', 'imagesLoaded', 'lazyload'], fun
 			}, 100);
 		},
 
-		resetMasonryFilter: function() {
+		resetMasonryFilter = function() {
 			// Mobile has no filtering
 			$grid.isotope({
 				filter: '*',
@@ -145,7 +55,7 @@ define(['jquery', 'modules/details', 'isotope', 'imagesLoaded', 'lazyload'], fun
 			});
 		},
 
-		_applyFiltering: function(criterion) {
+		applyFiltering = function(criterion) {
 			console.log(criterion);
 			
 			$grid.imagesLoaded(function(){
@@ -173,8 +83,100 @@ define(['jquery', 'modules/details', 'isotope', 'imagesLoaded', 'lazyload'], fun
 					$("#js-grid").children(".grid__item").removeClass("grid__item--animation");
 				}, 500);
 			});
-		}
+		};
 
+	// Public API
+	return {
+		
+		init: function() {
+			
+
+			// Setup module vars
+			$grid = $("#js-grid");
+			gridColumns = 4;
+			gridOptions = {
+				itemSelector: ".grid__item",
+				layoutMode: "masonry",
+				resizable: false,
+				animationEngine: "best-available"
+			};
+			// fake grid to serve as proxy for dimensions 
+			$gridProxy = $grid.clone().empty().css({ visibility: 'hidden' });
+
+			// place proxy
+			$grid.after($gridProxy);
+
+
+
+			// Lazyload images
+			$(".js__grid__item__wrapper__figure").lazyload({
+				effect : "fadeIn"
+			});
+
+			// Execute isotope when images loaded
+			$grid.imagesLoaded(function(){
+				console.log("images loaded");
+
+				// images loaded!
+				gridImagesLoaded = true;
+
+				// on debouced resize do a hack to get real percentage widths
+				$(window).smartresize( function() {
+					setMasonry();
+				}).smartresize();
+
+				
+				
+			});
+
+			// Top nav filtering
+			var $topNav = $('#js-topnav');
+
+			$topNav.on("click", "a", function(e){
+				var $this = $(this),
+					criterion = $this.attr("data-filter");
+
+				$topNav.find("a").removeClass("topnav__nav__item--active");
+				$this.addClass("topnav__nav__item--active");
+				applyFiltering(criterion);
+
+				e.preventDefault();
+			});
+
+			// Open details view
+			$(".js__grid__item__wrapper__rollover, .js-grid-readmore").on("click", function(e){
+				// Mobile do not apply this behaviour
+				if (!ssm.isActive("XS")) {
+					
+					// Find grid item parent and make it active after disabling already active ones
+					$grid.children('.grid__item--active').removeClass('grid__item--active');
+
+					// Open details view
+					details.open($(this));
+
+					// Scroll to top
+					$("html, body").animate({ scrollTop: "0" });
+
+					e.preventDefault();
+				}
+				
+			});
+
+			// Close details view
+			$("#js-detailsview-closebtn").on("click", function(){
+				// Make all grid elements active again
+				$grid.children('.grid__item--active').removeClass('grid__item--active');
+
+				// Close details view
+				details.close();
+			});
+
+			
+		},
+
+		setMasonry: setMasonry,
+
+		resetMasonryFilter: resetMasonryFilter
 
 	};
 

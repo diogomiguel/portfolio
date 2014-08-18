@@ -17,24 +17,10 @@ define(['jquery'], function ($) {
 		$loadingBG,
 		projectsJson = "data/projects.json",
 		aboutJson = "data/about.json",
-		blogJson = "data/blog.json";
+		blogJson = "data/blog.json",
 
-	// Public API
-	return {
-		
-		init: function() {
-			
-
-			// Setup module vars
-			$detailsView =  $("#js-detailsview");
-			$loadingBG = $('#js-loading-bg');
-
-			
-		},
-
-		open: function($target) {
-			var $this = $target.children('a'),
-				that = this;
+		open = function($target) {
+			var $this = $target.children('a');
 
 			// Find grid item parent and make it active after disabling already active ones
 			$this.parents('.grid__item').addClass('grid__item--active');
@@ -53,15 +39,15 @@ define(['jquery'], function ($) {
 					switch(dataType) {
 						// Projects
 						case "project":
-							that.loadProject(dataId);
+							loadProject(dataId);
 							break;
 						// About items
 						case "about":
-							that.loadAbout(dataId);
+							loadAbout(dataId);
 							break;
 						// Blog items
 						case "blog":
-							that.loadBlog(dataId);
+							loadBlog(dataId);
 							break;
 					}
 					detailsViewOpen = true;
@@ -80,7 +66,7 @@ define(['jquery'], function ($) {
 			}
 		},
 
-		close: function() {
+		close = function() {
 			$detailsView.addClass("detailsview--close");
 			
 
@@ -91,10 +77,15 @@ define(['jquery'], function ($) {
 			}, 1200);
 		},
 
+		showLoader = function() {
+			$loadingBG.addClass('loading__bg--active');
+		},
 
-		loadProject: function(dataId) {
-			var that = this;
+		hideLoader = function() {
+			$loadingBG.removeClass('loading__bg--active');
+		},
 
+		loadProject = function(dataId) {
 			// Load projects JSON
 			$.getJSON(projectsJson, function(data){
 				var projectData = data[dataId];
@@ -136,24 +127,21 @@ define(['jquery'], function ($) {
 				$detailsviewDescription.append("<div class='clearfix'></div>");
 
 				// Place content technologies
-				that._createDetailsList("Technologies", "detailsview__wrapper__technologies", projectData.technologies, $detailsviewDescription);
+				createDetailsList("Technologies", "detailsview__wrapper__technologies", projectData.technologies, $detailsviewDescription);
 
 				// Place content links
-				that._createLinksList(projectData.links, $detailsviewDescription);
+				createLinksList(projectData.links, $detailsviewDescription);
 
 				// Remove loading state and force open and visible
 				$detailsView.addClass("detailsview--open");
 
 				console.log(projectData);
 
-				that.hideLoader();
+				hideLoader();
 			});
 		},
 
-		loadAbout: function(dataId) {
-			var that = this;
-
-			
+		loadAbout = function(dataId) {
 
 			// Load about JSON
 			$.getJSON(aboutJson, function(data){
@@ -174,30 +162,30 @@ define(['jquery'], function ($) {
 				switch(dataId) {
 					case 'about':
 						// Workplaces list
-						that._createDetailsList("Workplaces", "detailsview__wrapper__workplaces", aboutData.workplaces, $detailsviewDescription);
+						createDetailsList("Workplaces", "detailsview__wrapper__workplaces", aboutData.workplaces, $detailsviewDescription);
 
 						// Interests list
-						that._createDetailsList("Other Interests", "detailsview__wrapper__interests", aboutData.interests, $detailsviewDescription);
+						createDetailsList("Other Interests", "detailsview__wrapper__interests", aboutData.interests, $detailsviewDescription);
 
 						// CV
-						that._createLinksList(aboutData.cv, $detailsviewDescription);
+						createLinksList(aboutData.cv, $detailsviewDescription);
 
 						break;
 					case 'contact':
 						// Contacts list
-						that._createDetailsList("Contact Details", "detailsview__wrapper__contacts", aboutData.contacts, $detailsviewDescription);
+						createDetailsList("Contact Details", "detailsview__wrapper__contacts", aboutData.contacts, $detailsviewDescription);
 						break;
 					case 'skills':
 						
 
 						// FrontEnd list
-						that._createDetailsList("Front End Skills", "detailsview__wrapper__frontend", aboutData.frontend, $detailsviewDescription);
+						createDetailsList("Front End Skills", "detailsview__wrapper__frontend", aboutData.frontend, $detailsviewDescription);
 
 						// BackEnd list
-						that._createDetailsList("Back End Skills", "detailsview__wrapper__backend", aboutData.backend, $detailsviewDescription);
+						createDetailsList("Back End Skills", "detailsview__wrapper__backend", aboutData.backend, $detailsviewDescription);
 
 						// Tools list
-						that._createDetailsList("Tools and Miscs", "detailsview__wrapper__tools", aboutData.tools, $detailsviewDescription);
+						createDetailsList("Tools and Miscs", "detailsview__wrapper__tools", aboutData.tools, $detailsviewDescription);
 						break;
 				}
 					
@@ -207,14 +195,12 @@ define(['jquery'], function ($) {
 
 				console.log(aboutData);
 
-				that.hideLoader();
+				hideLoader();
 			});
 		},
 
 
-		loadBlog: function(dataId) {
-			var that = this;
-
+		loadBlog = function(dataId) {
 			
 
 			// Load blog JSON
@@ -233,7 +219,7 @@ define(['jquery'], function ($) {
 				$detailsviewDescription.html(blogData.description);
 
 				// CV
-				that._createLinksList(blogData.links, $detailsviewDescription);
+				createLinksList(blogData.links, $detailsviewDescription);
 					
 
 				// Remove loading state and force open and visible
@@ -241,19 +227,11 @@ define(['jquery'], function ($) {
 
 				console.log(blogData);
 
-				that.hideLoader();
+				hideLoader();
 			});
 		},
 
-		showLoader: function() {
-			$loadingBG.addClass('loading__bg--active');
-		},
-
-		hideLoader: function() {
-			$loadingBG.removeClass('loading__bg--active');
-		},
-
-		_createDetailsList: function(title, ulClass, dataObj, $parentEl) {
+		createDetailsList = function(title, ulClass, dataObj, $parentEl) {
 			$parentEl.append("<hr /><h3>" + title + "</h3>");
 			var $ul = $("<ul/>").addClass(ulClass),
 				$div = $("<div/>").addClass('detailsview__wrapper__fakeclearcontainer'),
@@ -268,7 +246,7 @@ define(['jquery'], function ($) {
 			$parentEl.append($div);
 		},
 
-		_createLinksList: function(dataObj, $parentEl) {
+		createLinksList = function(dataObj, $parentEl) {
 			var n = 0,
 				$ul = $("<ul>").addClass("detailsview__wrapper__links");
 
@@ -288,7 +266,27 @@ define(['jquery'], function ($) {
 			$parentEl.append("<hr />")
 			.append($ul)
 			.append("<div class='clearfix'></div>");
-		}
+		};
+
+	// Public API
+	return {
+		
+		init: function() {
+			
+			// Setup module vars
+			$detailsView =  $("#js-detailsview");
+			$loadingBG = $('#js-loading-bg');
+			
+		},
+
+		open: open,
+
+		close: close,
+
+		showLoader: showLoader,
+
+		hideLoader: hideLoader
+		
 
 
 	};

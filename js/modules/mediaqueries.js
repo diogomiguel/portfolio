@@ -19,6 +19,7 @@ define(['jquery', 'modules/grid', 'simpleStateManager'], function ($, grid, ssm)
 	return {
 		
 		init: function() {
+
 			documentHeight = $doc.height();
 
 			// Add SSM config for touch devices
@@ -34,7 +35,6 @@ define(['jquery', 'modules/grid', 'simpleStateManager'], function ($, grid, ssm)
 			    id: 'XS',
 			    maxWidth: 480,
 			    onEnter: function() {
-					window.currentMQ = 'XS';
 					
 					// transform grid
 					grid.setMasonry(1);
@@ -51,7 +51,6 @@ define(['jquery', 'modules/grid', 'simpleStateManager'], function ($, grid, ssm)
 			    minWidth: 481,
 			    maxWidth: 768,
 			    onEnter: function() {
-					window.currentMQ = 'S';
 					
 					// transform grid
 					grid.setMasonry(2);
@@ -66,7 +65,6 @@ define(['jquery', 'modules/grid', 'simpleStateManager'], function ($, grid, ssm)
 			    minWidth: 769,
 			    maxWidth: 960,
 			    onEnter: function() {
-					window.currentMQ = 'M';
 					
 					// transform grid
 					grid.setMasonry(3);
@@ -82,7 +80,6 @@ define(['jquery', 'modules/grid', 'simpleStateManager'], function ($, grid, ssm)
 			    minWidth: 961,
 			    maxWidth: 1600,
 			    onEnter: function() {
-					window.currentMQ = 'L';
 					
 					// transform grid
 					grid.setMasonry(4);
@@ -96,7 +93,6 @@ define(['jquery', 'modules/grid', 'simpleStateManager'], function ($, grid, ssm)
 			    id: 'XL',
 			    minWidth: 1601,
 			    onEnter: function() {
-					window.currentMQ = 'XL';
 					
 					// transform grid
 					grid.setMasonry(5);

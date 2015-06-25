@@ -20,8 +20,8 @@
 }
 .grid__item--active{
 	@include opacity(0.5);
-	@include transition-duration('0.5s');
-	@include transition-property('opacity');
+	@include transition-duration(0.5s);
+	@include transition-property(opacity);
 
 	&:after{
 		display: block;
@@ -35,7 +35,7 @@
 }
 
 .grid__item--animation{
-	@include transition-duration('0.5s');
+	@include transition-duration(0.5s);
 }
 .grid__item__wrapper{
 	padding:5px 5px 20px;
@@ -128,9 +128,9 @@
 	background-color: rgba($black, 0.8); 
 	content: " ";
 	left: 0;
-	@include transition-property('top');
-	@include transition-duration('0.5s');
-	@include transition-timing-function('ease-out');
+	@include transition-property(top);
+	@include transition-duration(0.5s);
+	@include transition-timing-function(ease-out);
 
 	a{
 		
@@ -284,9 +284,9 @@ ul.grid__item__wrapper__content__technologies{
 	background-color: rgba($black, 0.8); 
 	content: " ";
 	left: 0;
-	@include transition-property('top');
-	@include transition-duration('0.5s');
-	@include transition-timing-function('ease-out');
+	@include transition-property(top);
+	@include transition-duration(0.5s);
+	@include transition-timing-function(ease-out);
 
 	a{
 		
@@ -401,7 +401,7 @@ ul.grid__item__wrapper__content__technologies{
 		position: absolute;
 		top: 0;
 		background-color: transparent; 
-		@include transition-property('none');
+		@include transition-property(none);
 
 		a{
 			top: 0;

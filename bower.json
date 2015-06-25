@@ -8,7 +8,7 @@
     "normalize-scss": "~2.1.2",
     "modernizr": "~2.7.1",
     "requirejs": "~2.1.9",
-    "isotope": "~2.0.0",
+    "isotope": "2.0.0",
     "imagesloaded": "~3.1.7",
     "jquery.lazyload": "~1.9.3",
     "SimpleStateManager": "~2.3.0"

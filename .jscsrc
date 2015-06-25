@@ -1,0 +1,7 @@
+{
+    "preset": "airbnb",
+    "fileExtensions": [ ".js", "jscs" ],
+
+    "maximumLineLength": 150,
+    "validateIndentation": 4
+}

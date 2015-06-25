@@ -1,36 +1,18 @@
 {
-	"rut": {
-		"imagepath": "rut/big.jpg",
-		"title": "Really Useful Theatres",
-		"description": "<p><strong>Really Useful Theatres Group</strong> owns and operates six commercial theatres in the heart of London’s West End. The Group is wholly owned by Andrew Lloyd Webber.</p><p>I was engaged to build their new website from the ground up.<br />I decided to use <strong>Expression Engine</strong> for being a CMS solutions that offered the flexibility and the room for customisation needed by this project.<br />As part of the tracking requirements, I developed a EE module that enables <strong>Server-Side Google Analytics</strong> tracking. Later I released this as a free add-on for the devot:ee community</p><p>Most of the <strong>JavaScript</strong> was built in a <strong>modular DRY</strong> way, allowing to use the same classes to build all the carousels and timelines of the website</p><p>The results are great - the site bounce rate reduce by a third and visitors up from a few hundred to a few thousand per day!</p><p>I am working on the specification document for the mobile website</p><p><small>developed as a twentyfoursquare employee.</small></p>",
-		"technologies": [
-			"HTML5/CSS3",
-			"JavaScript/jQuery",
-			"PHP",
-			"Expression Engine",
-			"Grunt",
-			"Git",
-			"Sass"
-		],
-		"links": [
-			["Link to live website", "http://reallyusefultheatres.co.uk"],
-			["Link to GA Tracker module", "https://github.com/diogomiguel/ee_ga_tracker"]
-		]
-	},
 	"activa": {
 		"imagepath": "activa/big.jpg",
 		"title": "Hosiery Selector",
 		"description": "<p><strong>Activa Healthcare</strong> is the market leader in compression hosiery and the fastest growing woundcare company in the UK.</p><p>Activa provide an online product sizer but this isn't always accessible by HCPs on the move making house calls. Therefore I was approached with the challenge of building my first big mobile application that gave HCPs all this information at their finger tips.</p><p>To make sure the app was available to as many HCPs as possible, I decided to build a <strong>hybrid native / HTML5 application</strong> using <strong>jQuery mobile</strong> for the UI and <strong>PhoneGap</strong> for the compiling. This meant developing versions for Windows, Android, Blackberry and Apple mobile phones and tablets.</p><p>The app was optimised and re-factored having in mind each operating system requirements and UI limitations.<br />I was also charged with all the compatibility testing and deployment processes</p><p>The app has been promoted by the British Lymphology Society who promote professional standards of care and has also been entered in a number of industry awards.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
 		"technologies": [
-			"PhoneGap",
-			"jQuery Mobile",
+			"Blackberry Webworks",
+			"Eclipse",
 			"HTML5/CSS3",
 			"JavaScript/jQuery",
-			"XCode",
-			"Eclipse",
+			"jQuery Mobile",
+			"PhoneGap",
+			"Sass",
 			"Visual Studio Express",
-			"Blackberry Webworks",
-			"Sass"
+			"XCode"
 		],
 		"links": [
 			["App Store", "https://itunes.apple.com/gb/app/activa-hosiery-selector/id633402356?mt=8"],
@@ -39,52 +21,52 @@
 			["Blackberry World", "http://appworld.blackberry.com/webstore/content/26689889/"]
 		]
 	},
-	"agp": {
-		"imagepath": "agp/big.jpg",
-		"title": "AGP Interactive Tool",
-		"description": "<p>The company's <strong>biggest Pharma client</strong>, briefed the agency on another project to be implemented on their abbottnextfrontier.com website.</p><p>There were two big challenges in completing this project: the tight deadline and the required <strong>compatibility with IE8+</strong></p><p>We outsourced most of the front end <strong>HTML/CSS</strong> work and I was called upon to help the freelancer to complete the more complex scripting tasks.<br />I had less than one week to grab all the static pages and together with the freelancer put them together in an animated <strong>HTML5 Ajax</strong> presentation.</p><p>A modular <strong>JavaScript</strong> code for all the website was developed re-using elements from other projects.<br />The result was a very concise, re-usable and dry collection of classes, which were able to get information from each slide and apply configurable rules to address the individual interaction elements.<br />In less than one day we managed to transform isolated HTML pages into a web presentation <strong>compatible with IE7+</strong></p><p>We had one extra day to deal with minor amends sent by the client, who was very happy with final result</p><p><small>developed as a twentyfoursquare employee.</small></p>",
-		"technologies": [
-			"HTML5/CSS3",
-			"JavaScript/jQuery",
-			"Ajax",
-			"Sass"
-		],
-		"links": [
-			["Link to web presentation", "https://abbottnextfrontier.com/interactive-tool/index.html"]
-		]
-	},
-	"ecoclock": {
-		"imagepath": "ecoclock/big.jpg",
-		"title": "Ecoclock",
-		"description": "<p>Being the oldest project in my portfolio, the <strong>Ecoclock</strong> was probably one of my biggest front end development challenges</p><p>Back when it was developed (early 2010), there were not many tools and libraries to enhance and ease front end implementations. Moreover most CSS3 new styles who would benefit this project (e.g. background-size), were not implemented yet. Therefore resizing the background image, keeping the full-screen resolution and respecting the aspect ratio whilst repositioning the icons to be on top of the appropriate elements of the image, required some tailored <strong>JavaScript</strong> to do all the math.</p><p><strong>Ajax</strong> was used to load pages built in PHP, calling a 3rd party <strong>web service</strong> to get all the data presented.<br />The <strong>PHP</strong> pages parsed all the returned <strong>XML</strong> from the chosen forecasting service and from the internal hotel bespoke system.<br />To achieve the final result, I had to work really close to the company that developed the aforementioned system.</p><p>The hard-work paid off by turning out to be one of the most enjoyable and beautifully designed projects I've ever worked on, even though the project could do some re-factoring and maintenance.</p><p><small>developed as a W20 employee.</small></p>",
-		"technologies": [
-			"HTML/CSS",
-			"JavaScript/jQuery",
-			"PHP",
-			"XML"
-		],
-		"links": [
-			["Link to live website", "http://areias.cnet.pt:8888/ecoclocken/"]
-		]
-	},
 	"fsi": {
-		"imagepath": "freestyle/big.jpg",
-		"title": "Abbott Diabetes Care",
-		"description": "<p>As the biggest client of twentyfoursquare, most of my projects were for <strong>Abbott Diabetes Care</strong>, part of Abbott which is a global, broad-based health care company devoted to pharmaceuticals and medical products. The company employs more than 65,000 people and markets its products in more than 130 countries.</p><p>Most of the tasks were improvements to their main website, which we inherited as a <strong>Zend PHP</strong> project developed by another company.<br />Amongst others, I re-factored the server-side code, validated the <strong>HTML</strong> accordingly to <strong>W3C</strong> requirements, developed new sections and implemented new UI elements.<br />Currently I am working on the new responsive <strong>Expression Engine</strong> website going through the latest approval processes.</p><br /><p>Some other smaller micro websites were developed for the same client following strict guidelines and technical requirements.</p><p>The key elements across the different websites, are the <em>request meter forms</em>, that are the main traffic source of the websites and generate thousands of new entries weekly.<br />Most forms are integrated with their <strong>Sage</strong> database and use a <strong>Postcode look-up</strong> tool web service to prevent duplicate entries.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
+		"imagepath": "fsi/big.jpg",
+		"title": "FreeStyle InsuLinx Switzerland",
+		"description": "<p>As the biggest client of twentyfoursquare, most of my projects were for <strong>Abbott Diabetes Care</strong>, part of Abbott which is a global, broad-based health care company devoted to pharmaceuticals and medical products. The company employs more than 65,000 people and markets its products in more than 130 countries.</p><p>They needed a simple static website for the launch of their FreeStyle meter in Switzerland.<br />This is a one page website with simple parallax animations and a meter ordering form connection to a PHP interface/API</p><p><small>developed as a twentyfoursquare employee.</small></p>",
 		"technologies": [ 
 			"HTML/CSS",
 			"JavaScript/jQuery",
+			"Parallax",
 			"PHP",
-			"Zend",
-			"Expression Engine",
-			"Sass",
-			"Ajax",
-			"Git/SVN"
+			"Zend"
 		],
 		"links": [
-			["Link to Abbott Diabetes Care website", "http://www.abbottdiabetescare.co.uk"],
-			["Link to FreeStyle Switzerland website", "http://freestyleinsulinx.ch"],
-			["Link to FreeStyle Optium Neo section", "http://abbottdiabetescare.co.uk/your-products/freestyle-optium-neo"]
+			["Link to FreeStyle Switzerland website", "http://freestyleinsulinx.ch"]
+		]
+	},
+	"fsm": {
+		"imagepath": "freestyle/big.jpg",
+		"title": "FreeStyle Blood Glucose Meters",
+		"description": "<p>As the biggest client of twentyfoursquare, most of my projects were for <strong>Abbott Diabetes Care</strong>, part of Abbott which is a global, broad-based health care company devoted to pharmaceuticals and medical products. The company employs more than 65,000 people and markets its products in more than 130 countries.</p><p>Most of the tasks were improvements to their main website, which we inherited as a <strong>Zend PHP</strong> project developed by another company.<br />Amongst others, I re-factored the server-side code, validated the <strong>HTML</strong> accordingly to <strong>W3C</strong> requirements, developed new sections and implemented new UI elements.</p><p>As their 6 years old was technically outdated and not optimised for smaller devices, they urgently needed a brand new built-from-scratch <strong>responsive website</strong>.<br />I was actively present in all the stages of the project, from scoping to launch. The biggest challenge was to implement a CMS integration which enabled editors to update every single page of the website, while keeping some already existing functionality like the meter ordering forms. <strong>Expression Engine</strong> proved to be the right tool for the challenge, as it provided me the means to easily add custom functionality to the already existing code.<br />This was probably my hardest project to date given the size of the website and the high accessibility, usability and technical standards that were required to be met.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
+		"technologies": [ 
+			"Ajax",
+			"Expression Engine",
+			"Git/SVN",
+			"Grunt",
+			"HTML/CSS",
+			"JavaScript/jQuery",
+			"Responsive",
+			"Sass"
+		],
+		"links": [
+			["Link to FreeStyle Blood Glucose Meters website", "http://www.abbottdiabetescare.co.uk"]
+		]
+	},
+	"katereid" : {
+		"imagepath": "kate/big.jpg",
+		"title": "Kate Reid",
+		"description": "<p><strong>Kate Reid</strong> an award winning Director of Photography contacted me in order to update her <strong>Code Igniter</strong> based website.</p><p>I did not only build new pages, amend bugs and improve the existing UI, but also came up with a strategy to improve the SEO of the website based on the targetted keywords<br />The final result was an easier to navigate, better ranked website and therefore a very happy client.</p>",
+		"technologies": [
+			"Code Igniter",
+			"HTML5/CSS",
+			"JavaScript/jQuery",
+			"PHP",
+			"SEO"
+		],
+		"links": [
+			["Link to live website", "http://www.katereiddop.com"]
 		]
 	},
 	"mfb": {
@@ -92,11 +74,9 @@
 		"title": "M-F-B",
 		"description": "<p><strong>MFB</strong> is a specialist shipping law firm provide a advice on shipping related litigation, arbitration and alternative dispute resolution.<br />I had the pleasure to do from scratch their new website.</p><p>It is a small website built in PHP using the <strong>in-house CMS</strong>.<br />During the development of this website, I had the chance to improve many features of the PHP bespoke CMS system, pushing them after to the master version.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
 		"technologies": [
-			
-			"HTML5/CSS",
-			"PHP",
 			"CMS",
-			"JavaScript/jQuery"
+			"HTML5/CSS",
+			"PHP"
 		],
 		"links": [
 			["Link to live website", "http://m-f-b.co.uk/"]
@@ -107,12 +87,28 @@
 		"title": "Paulo Melo Portfolio",
 		"description": "<p>Paulo Melo, a friend from Uni times, got in touch asking me to develop his portfolio website.<br />As a graphic designer, he produces all the design elements and hired a fellow web designer to produce most <strong>HTML/CSS</strong></p><p>My main job was to create all the <strong>JavaScript</strong>, improve the HTML/CSS code and create a small back end where he could update every aspect of the website.</p><p>I decided to use <strong>Symfony</strong> for the job, using this project as an opportunity to explore a new framework.<br />It proved to be the right decision, since the Symfony helpers provide a quick way to create a simple yet effective Back end admin panel, allowing me to save time by re-using generic modules and focus on other areas of the project.</p><p>This was by far the most enjoyable freelance work I've ever undertook and Paulo was very happy with the final result surpassing all his expectations.<br />Thus far he has recommended me to most of his friends and peers who are in need of some development help.</p>",
 		"technologies": [
-			"PHP",
 			"JavaScript/jQuery",
+			"PHP",
 			"Symfony"
 		],
+		"links": []
+	},
+	"rut": {
+		"imagepath": "rut/big.jpg",
+		"title": "Really Useful Theatres",
+		"description": "<p><strong>Really Useful Theatres Group</strong> owns and operates six commercial theatres in the heart of London’s West End. The Group is wholly owned by Andrew Lloyd Webber.</p><p>I was engaged to build their new website from the ground up.<br />I decided to use <strong>Expression Engine</strong> for being a CMS solutions that offered the flexibility and the room for customisation needed by this project.<br />As part of the tracking requirements, I developed a EE module that enables <strong>Server-Side Google Analytics</strong> tracking. Later I released this as a free add-on for the devot:ee community</p><p>Most of the <strong>JavaScript</strong> was built in a <strong>modular DRY</strong> way, allowing to use the same classes to build all the carousels and timelines of the website</p><p>The results are great - the site bounce rate reduce by a third and visitors up from a few hundred to a few thousand per day!</p><p>I am working on the specification document for the mobile website</p><p><small>developed as a twentyfoursquare employee.</small></p>",
+		"technologies": [
+			"Expression Engine",
+			"Git",
+			"Grunt",
+			"HTML5/CSS3",
+			"JavaScript/jQuery",
+			"PHP",
+			"Sass"
+		],
 		"links": [
-			["Link to live website", "http://www.paulobrandaomelo.com"]
+			["Link to live website", "http://reallyusefultheatres.co.uk"],
+			["Link to GA Tracker module", "https://github.com/diogomiguel/ee_ga_tracker"]
 		]
 	},
 	"tindrum": {
@@ -120,18 +116,18 @@
 		"title": "Tin Drum",
 		"description": "<p><strong>Tin Drum</strong> is a small independent, full service music consultancy.<br />I had the pleasure to built the redesign of their current website, that is now in beta version.</p><p>The new <strong>responsive website</strong> strongly relies on 2D imagery and parallaxing to highlight the creative nature of the company.<br />For the first time I used the <strong>use-init Yeoman generator</strong> to achieve an MVC modular front end, using <strong>RequireJS</strong> to smartly load the different <strong>JavaScript</strong> modules.<br /><strong>SimpleStateManager</strong> <strong>Bower</strong> plug-in was used to help with all the <strong>mediaqueries</strong> JavaScript manipulation and <strong>Skrollr</strong> to create pixel-aware, beautifully synchronized parallax animations</p><p><strong>Perch CMS</strong> proved to be the right CMS choice, due to it's simplicity and flexible integration.<br />Performance was a key aspect in this project and <strong>Grunt</strong> plug ins were used to minify, concat and optimise all aspects of the front end implementation</p><p>This joy of a project enabled me to deeply strengthen my front end skills, leaving both the client and me proud of the final result.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
 		"technologies": [			
+			"Bower",
+			"Git",
+			"Grunt",
 			"HTML5/CSS3",
 			"JavaScript/jQuery",
-			"Responsive",
+			"JSON",
 			"Parallax",
 			"Perch CMS",
-			"Bower",
-			"Grunt",
-			"Yeoman",
+			"Responsive",
 			"RequireJS",
 			"Use-init",
-			"JSON",
-			"Git"
+			"Yeoman"
 		],
 		"links": [
 			["Link to beta version", "http://tindrum.24sq.com"],
@@ -143,10 +139,10 @@
 		"title": "Twentyfoursquare",
 		"description": "<p>The previous website of the agency I am currently employed at - <strong>twentyfoursquare</strong> - was entirely built in Flash.<br />As we were getting more and more visits from mobile devices and clients searching for responsive solutions, it became clear we needed a more compatible approach.</p><p>The new site has been built to adapt to the size of the screen you're viewing it, i.e. optimising your experience regardless of your choice of platform.</p><p>There are four different sizes which should pretty much cover all devices. I've written <strong>mediaqueries</strong> to work out the width of the screen and serve the appropriate <strong>CSS</strong> for that window. The layout changes and any assets are resized accordingly.</p><p><small>developed as a twentyfoursquare employee.</small></p>",
 		"technologies": [			
-			"HTML5/CSS3",
+			"HTML5/CSS",
 			"JavaScript/jQuery",
-			"Responsive",
-			"PHP"
+			"PHP",
+			"Responsive"
 		],
 		"links": [
 			["Link to live website", "http://24sq.com"]
@@ -159,10 +155,9 @@
 		"technologies": [
 			"HTML5/CSS",
 			"JavaScript/jQuery",
+			"Objective C",
 			"PHP",
 			"Responsive",
-			
-			"Objective C",
 			"Sass"
 		],
 		"links": [

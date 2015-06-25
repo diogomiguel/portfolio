@@ -8,9 +8,9 @@ require.config({
 
 	paths: {
 		'jquery'	: '../components/jquery/jquery.min',
-		'isotope'	: '../components/isotope/jquery.isotope',
+		'isotope'	: '../components/isotope/jquery.isotope.min',
 		'imagesLoaded' :  '../components/imagesloaded/imagesloaded.pkgd',
-		'lazyload'	: '../components/jquery.lazyload/jquery.lazyload.min',
+		'lazyload'	: '../components/jquery.lazyload/jquery.lazyload',
 		'simpleStateManager' : '../components/SimpleStateManager/src/ssm'
 	},
 

@@ -63,8 +63,8 @@ a{
 	color: $orange;
 	text-decoration: none;
 	outline : none;
-	@include transition-property('all');
-	@include transition-duration('0.5s');
+	@include transition-property(all);
+	@include transition-duration(0.5s);
 
 	&:visited{
 		color: $orange;

@@ -21,6 +21,28 @@
 			["Blackberry World", "http://appworld.blackberry.com/webstore/content/26689889/"]
 		]
 	},
+	"club8": {
+		"imagepath": "club8/big.jpg",
+		"title": "Club8 Casino Online",
+		"description": "<p><strong>Club8 Casino Online</strong> is free to play Australian simulated casino gaming website.<br />The development of their mobile-only new website from the ground up, was my first big assignment as an employee of GameAccount Network, and my first project from scratch running on a <strong>Java</strong> based technology stack.<br />The desktop website was developed in parallel as a separate entity.</p><p>As the website is very simple in terms of design and functionality, I took this as an opportunity to explore other tools like <strong>Susy Sass Grids</strong>, <strong>Sass Breakpoint</strong> and <strong>Compass</strong> as a <strong>Grunt</strong> task.</p><p>This website was also the starting point for a demo were I explored ways of merging mobile and desktop source codes using <strong>Modernizr Feature Detection</strong> with some custom tests.</p><p>Regardless of it's simplicity, this is a project I'm proud to showcase, as the final result is very performant, lightweight, up-to-date and compliant</p><p><small>developed as a GameAccount Network employee.</small></p>",
+		"technologies": [			
+			"Compass",
+			"Feature Detection",
+			"Grunt",
+			"HTML5/CSS3",
+			"Mercurial",
+			"Modernizr",
+			"JavaScript/jQuery",
+			"JSTL",
+			"Responsive",
+			"RequireJS",
+			"Sass",
+			"Susy Grids"
+		],
+		"links": [
+			["Link to Website", "https://m.club8casino.com.au"]
+		]
+	},
 	"fsi": {
 		"imagepath": "fsi/big.jpg",
 		"title": "FreeStyle InsuLinx Switzerland",
@@ -33,7 +55,7 @@
 			"Zend"
 		],
 		"links": [
-			["Link to FreeStyle Switzerland website", "http://freestyleinsulinx.ch"]
+			["Link to Website", "http://freestyleinsulinx.ch"]
 		]
 	},
 	"fsm": {
@@ -51,7 +73,7 @@
 			"Sass"
 		],
 		"links": [
-			["Link to FreeStyle Blood Glucose Meters website", "http://www.abbottdiabetescare.co.uk"]
+			["Link to Website", "http://www.abbottdiabetescare.co.uk"]
 		]
 	},
 	"katereid" : {
@@ -66,7 +88,7 @@
 			"SEO"
 		],
 		"links": [
-			["Link to live website", "http://www.katereiddop.com"]
+			["Link to Website", "http://www.katereiddop.com"]
 		]
 	},
 	"mfb": {
@@ -79,7 +101,7 @@
 			"PHP"
 		],
 		"links": [
-			["Link to live website", "http://m-f-b.co.uk/"]
+			["Link to Website", "http://m-f-b.co.uk/"]
 		]
 	},
 	"pm": {
@@ -107,7 +129,7 @@
 			"Sass"
 		],
 		"links": [
-			["Link to live website", "http://reallyusefultheatres.co.uk"],
+			["Link to Website", "http://reallyusefultheatres.co.uk"],
 			["Link to GA Tracker module", "https://github.com/diogomiguel/ee_ga_tracker"]
 		]
 	},
@@ -130,7 +152,7 @@
 			"Yeoman"
 		],
 		"links": [
-			["Link to beta version", "http://tindrum.24sq.com"],
+			["Link to Website", "http://www.tindrummusic.co.uk"],
 			["Code examples on GitHub", "https://github.com/diogomiguel/t-drum"]
 		]
 	},
@@ -145,7 +167,7 @@
 			"Responsive"
 		],
 		"links": [
-			["Link to live website", "http://24sq.com"]
+			["Link to Website", "http://24sq.com"]
 		]
 	},
 	"wct": {
@@ -161,7 +183,7 @@
 			"Sass"
 		],
 		"links": [
-			["Link to live website", "http://woundcare-today.com"]
+			["Link to Website", "http://woundcare-today.com"]
 		]
 	},
 	"whitedesk": {
@@ -173,7 +195,7 @@
 			"Flash"
 		],
 		"links": [
-			["Link to live website", "http://thewhitedesk.com/"]
+			["Link to Website", "http://thewhitedesk.com/"]
 		]
 	}
 }
